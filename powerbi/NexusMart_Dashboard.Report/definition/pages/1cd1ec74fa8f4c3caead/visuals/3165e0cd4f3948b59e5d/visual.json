@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "3165e0cd4f3948b59e5d",
+  "position": {
+    "x": 860,
+    "y": 0,
+    "z": 4,
+    "height": 18,
+    "width": 400,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Jan 2024 \u2013 Jun 2025  \u00b7  amounts in PKR",
+                    "textStyle": {
+                      "fontSize": "8pt",
+                      "color": "#5A554D"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "right"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

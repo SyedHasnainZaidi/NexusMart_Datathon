@@ -1,0 +1,22 @@
+# secrets - never commit
+.env
+
+# competition data and database backups (too large / not ours to publish)
+data/raw/*.csv
+*.dump
+
+# Python and run-time files
+__pycache__/
+*.pyc
+.pytest_cache/
+data/work/
+data/processed/
+logs/*
+!logs/.gitkeep
+*.log
+dag_states.txt
+RESUME_HERE.txt
+
+# Power BI local cache
+**/.pbi/localSettings.json
+**/.pbi/cache.abf

@@ -1,0 +1,236 @@
+table dim_customer
+	lineageTag: f636e4f1-91d3-408f-9767-73e75464f0f5
+
+	column customer_key
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: eaff2356-8358-4845-8924-dcec475fd7d3
+		summarizeBy: none
+		sourceColumn: customer_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_id
+		dataType: string
+		lineageTag: 930f6078-af7f-4a16-bef2-4ce8f081cfe5
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column full_name
+		dataType: string
+		lineageTag: 046555bb-7efa-46b6-892e-3dfc2a185e28
+		summarizeBy: none
+		sourceColumn: full_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column email
+		dataType: string
+		lineageTag: 3ccf8624-d8f9-4e69-a26f-db687709ca9a
+		summarizeBy: none
+		sourceColumn: email
+
+		annotation SummarizationSetBy = Automatic
+
+	column phone
+		dataType: string
+		lineageTag: d5bdde0d-74ee-40bc-bff1-987c1b7f06e9
+		summarizeBy: none
+		sourceColumn: phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column gender
+		dataType: string
+		lineageTag: 3b60b567-289e-490b-9782-1a3f19de9433
+		summarizeBy: none
+		sourceColumn: gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column birth_year
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a94ca0b-6985-4679-9226-7f8f06cb5165
+		summarizeBy: none
+		sourceColumn: birth_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_band
+		dataType: string
+		lineageTag: 755d1b2f-6e74-4b6d-85c8-fb634eb3c2bd
+		summarizeBy: none
+		sourceColumn: age_band
+
+		annotation SummarizationSetBy = Automatic
+
+	column registration_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 2e42ca93-5c11-40cf-abc8-2b3b090fcd14
+		summarizeBy: none
+		sourceColumn: registration_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column registration_month
+		dataType: string
+		lineageTag: dee29a29-d3e3-4a70-85d2-8761bdaec8e6
+		summarizeBy: none
+		sourceColumn: registration_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: d058af6d-a421-4c12-8605-1d4c80aa6960
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column province
+		dataType: string
+		lineageTag: 915a1691-a859-480d-9cab-73a73185df3d
+		summarizeBy: none
+		sourceColumn: province
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 803d4114-99ed-43c2-b394-92826c92e41a
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_order_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 01e226dc-fc84-4c10-9bc2-bb3f6fcd2a22
+		summarizeBy: none
+		sourceColumn: first_order_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column cohort_month
+		dataType: string
+		lineageTag: 2029257b-1ed6-4137-a997-22b74b0781c2
+		summarizeBy: none
+		sourceColumn: cohort_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_order_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: e9b5edf4-d4d4-406b-ab0c-4fdb1f1f3307
+		summarizeBy: none
+		sourceColumn: last_order_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_count
+		dataType: int64
+		formatString: 0
+		lineageTag: c52a5623-4e16-46a5-a5a9-3efafd2a8f99
+		summarizeBy: none
+		sourceColumn: order_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column lifetime_net_revenue
+		dataType: double
+		formatString: "#,0.00"
+		lineageTag: 863d5b6f-1fa0-44c4-908c-c13d6b239b42
+		summarizeBy: none
+		sourceColumn: lifetime_net_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+	column rfm_recency_score
+		dataType: int64
+		formatString: 0
+		lineageTag: 39f66399-e237-4cbb-b98b-f65fe9b0a886
+		summarizeBy: none
+		sourceColumn: rfm_recency_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column rfm_frequency_score
+		dataType: int64
+		formatString: 0
+		lineageTag: 40c9810e-f3b8-459c-8e97-7981b7b1ef2e
+		summarizeBy: none
+		sourceColumn: rfm_frequency_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column rfm_monetary_score
+		dataType: int64
+		formatString: 0
+		lineageTag: fdfbe603-6a26-4e7c-af18-ce1c49df1fe4
+		summarizeBy: none
+		sourceColumn: rfm_monetary_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column rfm_score
+		dataType: string
+		lineageTag: 757ebd0d-469c-44fc-b97e-b4a0a5be7ad7
+		summarizeBy: none
+		sourceColumn: rfm_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_segment
+		dataType: string
+		lineageTag: a1adef2a-817c-4134-8fe3-d763d48494b4
+		summarizeBy: none
+		sourceColumn: customer_segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_repeat_customer
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9823507e-b675-470a-a0d7-b7b8d8e4ce0b
+		summarizeBy: none
+		sourceColumn: is_repeat_customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column duplicate_ids_merged
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b578eb7-33ce-499b-8908-015cc0fc97d3
+		summarizeBy: none
+		sourceColumn: duplicate_ids_merged
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_at
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 6578937c-3fe1-484f-a3f3-c03301f427cc
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_customer = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(Server, Database),
+				    tbl = Source{[Schema="dw",Item="dim_customer"]}[Data]
+				in
+				    tbl
+
+	annotation PBI_ResultType = Table

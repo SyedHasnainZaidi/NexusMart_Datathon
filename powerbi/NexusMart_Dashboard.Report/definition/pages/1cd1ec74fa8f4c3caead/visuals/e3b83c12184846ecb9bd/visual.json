@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "e3b83c12184846ecb9bd",
+  "position": {
+    "x": 20,
+    "y": 38,
+    "z": 1,
+    "height": 18,
+    "width": 1240,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "All amounts in PKR \u00b7 definitions as in the brief \u00b7 MoM = latest month in the selection vs the month before",
+                    "textStyle": {
+                      "fontSize": "8pt",
+                      "color": "#5A554D",
+                      "fontStyle": "italic"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,32 @@
+run_id,check_name,severity,observed,threshold,passed,detail
+manual__2026-10-18T10_33_29.957081_00_00,fact_rowcount_matches_staging,CRITICAL,315143,315143,True,FactSales rows = cleaned order lines
+manual__2026-10-18T10_33_29.957081_00_00,fact_min_rows,CRITICAL,315143,,True,Fact is not empty
+manual__2026-10-18T10_33_29.957081_00_00,fact_no_duplicate_lines,CRITICAL,0,0,True,Grain = one row per order line
+manual__2026-10-18T10_33_29.957081_00_00,fact_net_reconciles_to_staging,CRITICAL,0.00,0.01,True,SUM(net_amount) fact vs staging
+manual__2026-10-18T10_33_29.957081_00_00,unknown_date_share,CRITICAL,0E-24,0.0,True,Every line has a valid order date
+manual__2026-10-18T10_33_29.957081_00_00,unknown_customer_share,CRITICAL,0.00200543880079836773,0.05,True,Lines mapped to Unknown customer
+manual__2026-10-18T10_33_29.957081_00_00,unknown_product_share,CRITICAL,0.00295738759864569418,0.05,True,Lines mapped to Unknown product
+manual__2026-10-18T10_33_29.957081_00_00,unknown_seller_share,CRITICAL,0E-24,0.05,True,Lines mapped to Unknown seller
+manual__2026-10-18T10_33_29.957081_00_00,unknown_location_share,CRITICAL,0.00190707075835414399,0.05,True,Lines mapped to Unknown location
+manual__2026-10-18T10_33_29.957081_00_00,net_equals_gross_minus_discount,CRITICAL,0,0,True,Arithmetic integrity
+manual__2026-10-18T10_33_29.957081_00_00,no_negative_or_invalid_amounts,CRITICAL,0,0,True,"qty>0, price>0, 0<=discount<=gross"
+manual__2026-10-18T10_33_29.957081_00_00,refund_not_above_line_net,CRITICAL,0,0,True,ReturnedAmount <= NetAmount
+manual__2026-10-18T10_33_29.957081_00_00,no_returns_on_cancelled_lines,CRITICAL,0,0,True,Cancelled lines cannot be returned
+manual__2026-10-18T10_33_29.957081_00_00,shipping_allocation_sums_to_order_fee,CRITICAL,0,0,True,No double counting of courier fees
+manual__2026-10-18T10_33_29.957081_00_00,order_dates_within_valid_period,CRITICAL,0,0,True,2024-01-01..2025-06-30
+manual__2026-10-18T10_33_29.957081_00_00,no_null_order_dates,CRITICAL,0,0,True,Staging orders all dated
+manual__2026-10-18T10_33_29.957081_00_00,unknown_members_present,CRITICAL,5,5,True,Each dimension has key -1
+manual__2026-10-18T10_33_29.957081_00_00,dim_customer_complete,CRITICAL,42501,42501,True,All master customers loaded
+manual__2026-10-18T10_33_29.957081_00_00,dim_product_complete,CRITICAL,3176,3176,True,All master products loaded
+manual__2026-10-18T10_33_29.957081_00_00,flagged_line_share,WARNING,0.25714040927451982116,0.30,True,Lines carrying at least one repair flag
+manual__2026-10-18T10_33_29.957081_00_00,reject_rate_locations,CRITICAL,0.0,0.02,True,Quarantined (non-duplicate) rows / raw rows
+manual__2026-10-18T10_33_29.957081_00_00,reject_rate_sellers,CRITICAL,0.0,0.02,True,Quarantined (non-duplicate) rows / raw rows
+manual__2026-10-18T10_33_29.957081_00_00,reject_rate_products,CRITICAL,0.0,0.02,True,Quarantined (non-duplicate) rows / raw rows
+manual__2026-10-18T10_33_29.957081_00_00,reject_rate_customers,CRITICAL,0.0,0.02,True,Quarantined (non-duplicate) rows / raw rows
+manual__2026-10-18T10_33_29.957081_00_00,reject_rate_orders,CRITICAL,0.0,0.02,True,Quarantined (non-duplicate) rows / raw rows
+manual__2026-10-18T10_33_29.957081_00_00,reject_rate_order_items,CRITICAL,0.0,0.02,True,Quarantined (non-duplicate) rows / raw rows
+manual__2026-10-18T10_33_29.957081_00_00,reject_rate_payments,CRITICAL,0.0,0.02,True,Quarantined (non-duplicate) rows / raw rows
+manual__2026-10-18T10_33_29.957081_00_00,reject_rate_shipping,CRITICAL,0.0,0.02,True,Quarantined (non-duplicate) rows / raw rows
+manual__2026-10-18T10_33_29.957081_00_00,reject_rate_returns,CRITICAL,0.000935,0.02,True,Quarantined (non-duplicate) rows / raw rows
+manual__2026-10-18T10_33_29.957081_00_00,order_total_reconciliation,CRITICAL,4.4e-05,0.03,True,Orders whose cleaned lines differ from order_total by >1%
+manual__2026-10-18T10_33_29.957081_00_00,fact_min_rows_threshold,CRITICAL,315143.0,1000.0,True,Minimum expected fact rows

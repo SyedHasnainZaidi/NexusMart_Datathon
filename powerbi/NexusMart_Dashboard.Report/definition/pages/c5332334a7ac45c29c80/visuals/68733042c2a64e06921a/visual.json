@@ -1,0 +1,101 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "68733042c2a64e06921a",
+  "position": {
+    "x": 20,
+    "y": 70,
+    "z": 10,
+    "height": 300,
+    "width": 600,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dq_rejects"
+                    }
+                  },
+                  "Property": "source_table"
+                }
+              },
+              "queryRef": "dq_rejects.source_table",
+              "nativeQueryRef": "source_table"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dq_rejects"
+                    }
+                  },
+                  "Property": "reason_code"
+                }
+              },
+              "queryRef": "dq_rejects.reason_code",
+              "nativeQueryRef": "reason_code"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dq_rejects"
+                    }
+                  },
+                  "Property": "records"
+                }
+              },
+              "queryRef": "dq_rejects.records",
+              "nativeQueryRef": "records"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Quarantined / merged records (reject table, latest run)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

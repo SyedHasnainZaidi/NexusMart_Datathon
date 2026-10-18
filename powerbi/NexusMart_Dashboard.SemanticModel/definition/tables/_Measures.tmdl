@@ -1,0 +1,256 @@
+table _Measures
+	lineageTag: 618f8990-3faa-43a7-96b0-892125b0b767
+
+	measure 'Gross Sales' = SUM(fact_sales[gross_amount])
+		formatString: "#,0"
+		displayFolder: 1 Sales
+		lineageTag: ad79b185-d804-46cf-930f-e1e58aeca185
+
+	measure Discounts = SUM(fact_sales[discount_amount])
+		formatString: "#,0"
+		displayFolder: 1 Sales
+		lineageTag: a674a5b1-c60c-44dc-ae35-dff305768209
+
+	measure 'Cancelled Sales' = CALCULATE(SUM(fact_sales[net_amount]), fact_sales[is_cancelled] = TRUE())
+		formatString: "#,0"
+		displayFolder: 1 Sales
+		lineageTag: defa4eff-12ab-4172-8498-abdca8d43028
+
+	measure NMV = CALCULATE(SUM(fact_sales[net_amount]), fact_sales[is_cancelled] = FALSE())
+		formatString: "#,0"
+		displayFolder: 1 Sales
+		lineageTag: 83a82870-ba04-4a78-bfc2-2613a62d97f3
+
+	measure Refunds = SUM(fact_sales[returned_amount])
+		formatString: "#,0"
+		displayFolder: 1 Sales
+		lineageTag: 892be105-0391-4b74-b41e-f9576c52f1d9
+
+	measure 'Net Revenue' = [NMV] - [Refunds]
+		formatString: "#,0"
+		displayFolder: 1 Sales
+		lineageTag: 58a2ed82-26fb-4b14-8879-38c446c6b7ae
+
+	measure 'Cost of Goods' = CALCULATE(SUM(fact_sales[cost_amount]), fact_sales[is_kept_line] = TRUE())
+		formatString: "#,0"
+		displayFolder: 2 Profit
+		lineageTag: febb92e6-321c-41ff-9958-1ad6487ff9ca
+
+	measure Margin = [Net Revenue] - [Cost of Goods]
+		formatString: "#,0"
+		displayFolder: 2 Profit
+		lineageTag: c796c4af-6a33-464b-9266-d3952a51e411
+
+	measure 'Margin %' = DIVIDE([Margin], [Net Revenue])
+		formatString: "0.0%"
+		displayFolder: 2 Profit
+		lineageTag: c3921968-2042-4d60-b619-43c75190ec76
+
+	measure 'Shipping Cost' = SUM(fact_sales[shipping_fee])
+		formatString: "#,0"
+		displayFolder: 2 Profit
+		lineageTag: 83326727-f2ac-4c29-a48e-a19524f5a57f
+
+	measure 'Margin After Shipping' = [Margin] - [Shipping Cost]
+		formatString: "#,0"
+		displayFolder: 2 Profit
+		lineageTag: 3863836d-bdbc-4ddb-b31c-e188913e9fc8
+
+	measure 'Margin After Shipping %' = DIVIDE([Margin After Shipping], [Net Revenue])
+		formatString: "0.0%"
+		displayFolder: 2 Profit
+		lineageTag: 5e634346-c185-4212-9d35-91863ffeee87
+
+	measure 'Discount Rate' = DIVIDE([Discounts], [Gross Sales])
+		formatString: "0.0%"
+		displayFolder: 2 Profit
+		lineageTag: 72b37bc6-6e57-4af9-b183-6ffef74fe541
+
+	measure 'Leakage %' = 1 - DIVIDE([Net Revenue], [Gross Sales])
+		formatString: "0.0%"
+		displayFolder: 2 Profit
+		lineageTag: 058e28cf-f796-4cb7-8d8d-19ab4b8e442c
+
+	measure Orders = DISTINCTCOUNT(fact_sales[order_id])
+		formatString: "#,0"
+		displayFolder: 3 Orders
+		lineageTag: f3840f7d-79fd-4c4c-aee0-e0f2f358667e
+
+	measure 'Non-Cancelled Orders' = CALCULATE(DISTINCTCOUNT(fact_sales[order_id]), fact_sales[is_cancelled] = FALSE())
+		formatString: "#,0"
+		displayFolder: 3 Orders
+		lineageTag: eb2c4418-504d-465d-9e6f-49b47bb81876
+
+	measure 'Cancelled Orders' = CALCULATE(DISTINCTCOUNT(fact_sales[order_id]), fact_sales[is_cancelled] = TRUE())
+		formatString: "#,0"
+		displayFolder: 3 Orders
+		lineageTag: 832f8188-7f9f-483e-8fb5-975b44f829ad
+
+	measure 'Cancellation Rate' = DIVIDE([Cancelled Orders], [Orders])
+		formatString: "0.00%"
+		displayFolder: 3 Orders
+		lineageTag: 29c18375-0e53-465a-b7cd-048dd618f966
+
+	measure AOV = DIVIDE([NMV], [Non-Cancelled Orders])
+		formatString: "#,0"
+		displayFolder: 3 Orders
+		lineageTag: 558ccd2e-3933-44bc-894c-5c4f77eeee93
+
+	measure Units = CALCULATE(SUM(fact_sales[quantity]), fact_sales[is_cancelled] = FALSE())
+		formatString: "#,0"
+		displayFolder: 3 Orders
+		lineageTag: 6674d6be-f5b5-4d30-a400-6af38558f328
+
+	measure 'Delivered Lines' = CALCULATE(COUNTROWS(fact_sales), fact_sales[is_delivered_line] = TRUE())
+		formatString: "#,0"
+		displayFolder: 4 Returns
+		lineageTag: 47326582-ce71-49aa-aedd-7e1f54115d1e
+
+	measure 'Returned Lines' = CALCULATE(COUNTROWS(fact_sales), fact_sales[is_returned] = TRUE())
+		formatString: "#,0"
+		displayFolder: 4 Returns
+		lineageTag: c46107ea-353a-4914-9b72-37d9a4ee1c0a
+
+	measure 'Return Rate' = DIVIDE([Returned Lines], [Delivered Lines])
+		formatString: "0.00%"
+		displayFolder: 4 Returns
+		lineageTag: cde99988-8342-429e-a252-0a14c9cd3859
+
+	measure 'Refunds by Return Date' = CALCULATE([Refunds], USERELATIONSHIP(fact_sales[return_date_key], dim_date[date_key]))
+		formatString: "#,0"
+		displayFolder: 4 Returns
+		lineageTag: 6fcafc57-0992-47d9-9c47-dc2121377852
+
+	measure 'Active Customers' = CALCULATE(DISTINCTCOUNT(fact_sales[customer_key]), fact_sales[is_cancelled] = FALSE(), fact_sales[customer_key] <> -1)
+		formatString: "#,0"
+		displayFolder: 5 Customers
+		lineageTag: 869a7c2b-1387-4030-b822-40c27ff49071
+
+	measure 'New Customer Revenue' = CALCULATE([Net Revenue], fact_sales[is_new_customer_order] = TRUE())
+		formatString: "#,0"
+		displayFolder: 5 Customers
+		lineageTag: cc0baba4-3377-41c1-8b40-6fd482eca174
+
+	measure 'Returning Customer Revenue' = [Net Revenue] - [New Customer Revenue]
+		formatString: "#,0"
+		displayFolder: 5 Customers
+		lineageTag: f7638799-80c4-4407-a623-adc387eab27b
+
+	measure 'Observed CLV' = DIVIDE(CALCULATE([Net Revenue], fact_sales[customer_key] <> -1), [Active Customers])
+		formatString: "#,0"
+		displayFolder: 5 Customers
+		lineageTag: 6a417088-b284-4dc2-824b-ab91264cf974
+
+	measure 'Repeat Purchase Rate' = VAR c = ADDCOLUMNS(FILTER(VALUES(fact_sales[customer_key]), fact_sales[customer_key] <> -1), "@o", [Non-Cancelled Orders]) RETURN DIVIDE(COUNTROWS(FILTER(c, [@o] >= 2)), COUNTROWS(FILTER(c, [@o] >= 1)))
+		formatString: "0.0%"
+		displayFolder: 5 Customers
+		lineageTag: 1ea808af-a6cf-4174-8b20-d95d1e4ee782
+
+	measure 'On-Time Rate' = DIVIDE(CALCULATE(COUNTROWS(fact_sales), fact_sales[is_on_time] = TRUE(), fact_sales[is_delivered_line] = TRUE()), CALCULATE(COUNTROWS(fact_sales), NOT ISBLANK(fact_sales[is_on_time]), fact_sales[is_delivered_line] = TRUE()))
+		formatString: "0.0%"
+		displayFolder: 6 Delivery
+		lineageTag: 7de37ed0-006f-456e-9ad0-6905a09d44b5
+
+	measure 'Avg Delivery Days' = AVERAGE(fact_sales[order_to_delivery_days])
+		formatString: "0.0"
+		displayFolder: 6 Delivery
+		lineageTag: 98a4654c-ed04-496e-8203-defafe4ab5be
+
+	measure 'Seller Quality Score' = AVERAGE(dim_seller[quality_score])
+		formatString: "0.0"
+		displayFolder: 6 Delivery
+		lineageTag: 916085d7-f86d-4e47-94b0-6cbe54000c5c
+
+	measure 'Net Revenue per Day' = DIVIDE([Net Revenue], CALCULATE(DISTINCTCOUNT(dim_date[full_date]), fact_sales))
+		formatString: "#,0"
+		displayFolder: 7 Time
+		lineageTag: a896a62a-9a74-49b8-92d8-ac7dd409365d
+
+	measure 'Net Revenue 3M Avg' = IF(ISBLANK([Net Revenue]), BLANK(), AVERAGEX(CALCULATETABLE(VALUES(dim_date[year_month]), DATESINPERIOD(dim_date[full_date], MAX(dim_date[full_date]), -3, MONTH)), [Net Revenue]))
+		formatString: "#,0"
+		displayFolder: 7 Time
+		lineageTag: 3984e033-193f-4595-b17a-9435373fdf56
+
+	measure 'Net Revenue 7D Avg' = IF(ISBLANK([Net Revenue]), BLANK(), AVERAGEX(DATESINPERIOD(dim_date[full_date], MAX(dim_date[full_date]), -7, DAY), [Net Revenue]))
+		formatString: "#,0"
+		displayFolder: 7 Time
+		lineageTag: cfd9bad4-34fd-46eb-9cdc-ea2dd3538458
+
+	measure 'Festival Uplift vs Normal %' = VAR n = CALCULATE([Net Revenue per Day], dim_date[event_name] = "Normal day") RETURN DIVIDE([Net Revenue per Day] - n, n)
+		formatString: "0.0%"
+		displayFolder: 7 Time
+		lineageTag: 8397540c-8ee5-428d-8704-758ca26826ed
+
+	measure 'Latest Month' = FORMAT(CALCULATE(MAX(dim_date[full_date]), fact_sales), "mmm yyyy")
+		displayFolder: 7 Time
+		lineageTag: 4c8cf3e6-ef9a-414b-8a08-1e50190ef266
+
+	measure 'Net Revenue Share %' = DIVIDE([Net Revenue], CALCULATE([Net Revenue], ALLSELECTED(dim_location)))
+		formatString: "0.0%"
+		displayFolder: 8 Geography
+		lineageTag: 9ebffca0-be96-4cc6-9a7f-8c65b8c22dc5
+
+	measure 'Top 5 City Share %' = VAR t = TOPN(5, FILTER(ALLSELECTED(dim_location[city]), dim_location[city] <> "Unknown"), [Net Revenue]) RETURN DIVIDE(CALCULATE([Net Revenue], t), CALCULATE([Net Revenue], ALLSELECTED(dim_location)))
+		formatString: "0.0%"
+		displayFolder: 8 Geography
+		lineageTag: b70bdb40-22cf-49cb-954c-30be37bd4af1
+
+	measure 'Flagged Line %' = DIVIDE(CALCULATE(COUNTROWS(fact_sales), NOT ISBLANK(fact_sales[dq_flags])), COUNTROWS(fact_sales))
+		formatString: "0.0%"
+		displayFolder: 9 Data quality
+		lineageTag: 728ab32d-bfdf-4f57-95f2-6ec58ecc8a4a
+
+	measure 'Net Revenue MoM' = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Net Revenue], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Net Revenue], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN DIVIDE(c - p, p)
+		formatString: "+0.0%;-0.0%;0.0%"
+		displayFolder: 0 MoM
+		lineageTag: 8c777bc0-eddd-47a2-833b-64303df37e4a
+
+	measure 'Orders MoM' = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Orders], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Orders], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN DIVIDE(c - p, p)
+		formatString: "+0.0%;-0.0%;0.0%"
+		displayFolder: 0 MoM
+		lineageTag: 74d4bc0e-3a24-49f3-a078-c63f8476ee93
+
+	measure 'AOV MoM' = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([AOV], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([AOV], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN DIVIDE(c - p, p)
+		formatString: "+0.0%;-0.0%;0.0%"
+		displayFolder: 0 MoM
+		lineageTag: 07b54399-8439-4459-a4ca-913a4709bafc
+
+	measure 'Units MoM' = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Units], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Units], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN DIVIDE(c - p, p)
+		formatString: "+0.0%;-0.0%;0.0%"
+		displayFolder: 0 MoM
+		lineageTag: 98d3bab2-2394-4de0-970b-5e8c1ab34349
+
+	measure 'Active Customers MoM' = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Active Customers], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Active Customers], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN DIVIDE(c - p, p)
+		formatString: "+0.0%;-0.0%;0.0%"
+		displayFolder: 0 MoM
+		lineageTag: 4eb2d22b-9ba7-4e53-8cc2-3ff15295e35a
+
+	measure 'Return Rate MoM' = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Return Rate], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Return Rate], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN c - p
+		formatString: "+0.00%;-0.00%;0.00%"
+		displayFolder: 0 MoM
+		lineageTag: 87a4a78c-753c-4e20-86d7-309f76f0643b
+
+	measure 'Cancellation Rate MoM' = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Cancellation Rate], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Cancellation Rate], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN c - p
+		formatString: "+0.00%;-0.00%;0.00%"
+		displayFolder: 0 MoM
+		lineageTag: 0f0da685-5a91-450c-9946-75666dc65401
+
+	measure 'Margin % MoM' = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Margin %], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Margin %], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN c - p
+		formatString: "+0.00%;-0.00%;0.00%"
+		displayFolder: 0 MoM
+		lineageTag: 99e392bb-7609-4e0c-93e8-88d913693473
+
+	column Value
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 49128cd2-f140-45ed-a5ec-de6c7b99fa74
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = calculated
+		mode: import
+		source = ROW("Value", 1)

@@ -1,0 +1,238 @@
+table dim_date
+	dataCategory: Time
+	lineageTag: 5530828a-53aa-4b20-9171-181fe8ab9f03
+
+	column date_key
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4e1e1bf1-cfbf-4464-a794-edc99da817c5
+		summarizeBy: none
+		sourceColumn: date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column full_date
+		dataType: dateTime
+		isKey
+		formatString: Short Date
+		lineageTag: 5fa37acb-3148-4bc8-835b-c660572059c7
+		summarizeBy: none
+		sourceColumn: full_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_of_month
+		dataType: int64
+		formatString: 0
+		lineageTag: 184649ce-b8bf-492c-8860-e69ca3deecf1
+		summarizeBy: none
+		sourceColumn: day_of_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_name
+		dataType: string
+		lineageTag: 79327ce4-6f57-4415-8a9d-25a77e933498
+		summarizeBy: none
+		sourceColumn: day_name
+		sortByColumn: day_of_week
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_of_week
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ff7c988-d61d-4dd2-af72-3913b0028d3c
+		summarizeBy: none
+		sourceColumn: day_of_week
+
+		annotation SummarizationSetBy = Automatic
+
+	column week_of_year
+		dataType: int64
+		formatString: 0
+		lineageTag: ce7aae6c-83a1-4124-86cf-a34fed519525
+		summarizeBy: none
+		sourceColumn: week_of_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column week_start_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 5ce9f047-5780-40ff-9754-2229414ad018
+		summarizeBy: none
+		sourceColumn: week_start_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_number
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e89236b-ef27-47cf-a23b-b9a643bfa6e9
+		summarizeBy: none
+		sourceColumn: month_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_name
+		dataType: string
+		lineageTag: 2ad2e342-eeae-410f-9331-b6c776047b0e
+		summarizeBy: none
+		sourceColumn: month_name
+		sortByColumn: month_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_month
+		dataType: string
+		lineageTag: 3f1d3bb0-1624-4e73-b6e6-0ffdd61aefb1
+		summarizeBy: none
+		sourceColumn: year_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: 5f0a669b-8e65-4f4b-87f4-f7f552115e62
+		summarizeBy: none
+		sourceColumn: quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column year_quarter
+		dataType: string
+		lineageTag: d276a09e-11ff-463a-a593-44df54cebfb4
+		summarizeBy: none
+		sourceColumn: year_quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 5c3178fd-ad85-4f9e-bf38-124c271189ff
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_weekend
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 167ac2b2-e173-4f71-9f4f-142a087268e6
+		summarizeBy: none
+		sourceColumn: is_weekend
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_public_holiday
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b5b9bf1b-c378-4be3-8a09-9525292f6e4e
+		summarizeBy: none
+		sourceColumn: is_public_holiday
+
+		annotation SummarizationSetBy = Automatic
+
+	column holiday_name
+		dataType: string
+		lineageTag: 7233bde2-e050-4630-ad25-ab7df9454879
+		summarizeBy: none
+		sourceColumn: holiday_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_ramadan
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 489c9cee-3660-416c-b0d5-99654f745776
+		summarizeBy: none
+		sourceColumn: is_ramadan
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_eid_ul_fitr
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 5591695a-4ae5-4d53-8b9d-2865d44fc5da
+		summarizeBy: none
+		sourceColumn: is_eid_ul_fitr
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_eid_ul_adha
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 465481ec-a34a-463f-b86e-37ec22a0b5c2
+		summarizeBy: none
+		sourceColumn: is_eid_ul_adha
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_eid
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 55e13aba-84f0-4fd1-8b54-6f95209df84a
+		summarizeBy: none
+		sourceColumn: is_eid
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_independence_day
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8f346add-084b-401c-ae54-eeee63d68cc2
+		summarizeBy: none
+		sourceColumn: is_independence_day
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_singles_day_1111
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8af6346d-e5a2-4185-8dab-001dc6b06814
+		summarizeBy: none
+		sourceColumn: is_singles_day_1111
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_black_friday
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 6a0a03d5-2f6f-40b6-bff0-73f8b055aa9b
+		summarizeBy: none
+		sourceColumn: is_black_friday
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_name
+		dataType: string
+		lineageTag: 8d579968-f5b7-47bc-be10-c49dda2592b0
+		summarizeBy: none
+		sourceColumn: event_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_festival_period
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b27b07de-5e29-4a2b-9947-6742b3ae78a9
+		summarizeBy: none
+		sourceColumn: is_festival_period
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_date = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(Server, Database),
+				    tbl = Source{[Schema="dw",Item="dim_date"]}[Data],
+				    known = Table.SelectRows(tbl, each [date_key] <> -1)
+				in
+				    known
+
+	annotation PBI_ResultType = Table

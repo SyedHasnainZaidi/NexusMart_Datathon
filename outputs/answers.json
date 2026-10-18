@@ -1,0 +1,2516 @@
+{
+  "overview": {
+    "gross_sales": 1437376789.8,
+    "discounts": 115521994.0,
+    "nmv": 1200039486.0,
+    "refunds": 57761841.0,
+    "net_revenue": 1142277645.0,
+    "cogs_kept": 835904522.4,
+    "margin": 306373122.6,
+    "margin_pct": 0.2682,
+    "shipping_cost": 81886933.9964,
+    "orders": 160000.0,
+    "non_cancelled_orders": 145338.0,
+    "aov": 8256.8873,
+    "units": 469775.0,
+    "lines": 315143.0,
+    "delivered_lines": 283549.0,
+    "returned_lines": 14706.0,
+    "return_rate": 0.0519,
+    "cancellation_rate": 0.0916,
+    "active_customers": 31521.0
+  },
+  "monthly": [
+    {
+      "year_month": "2024-01",
+      "gross_sales": 47738942.0,
+      "nmv": 42555701.0,
+      "net_revenue": 40391354.0,
+      "net_revenue_mom": NaN,
+      "margin_pct": 0.2907,
+      "orders": 5596.0,
+      "return_rate": 0.0567,
+      "cancellation_rate": 0.0743,
+      "active_customers": 4343.0
+    },
+    {
+      "year_month": "2024-02",
+      "gross_sales": 49522420.0,
+      "nmv": 44294028.0,
+      "net_revenue": 42308261.0,
+      "net_revenue_mom": 0.0475,
+      "margin_pct": 0.2832,
+      "orders": 5556.0,
+      "return_rate": 0.0528,
+      "cancellation_rate": 0.0839,
+      "active_customers": 4281.0
+    },
+    {
+      "year_month": "2024-03",
+      "gross_sales": 65403985.0,
+      "nmv": 57278153.0,
+      "net_revenue": 54656944.0,
+      "net_revenue_mom": 0.2919,
+      "margin_pct": 0.2782,
+      "orders": 7558.0,
+      "return_rate": 0.0507,
+      "cancellation_rate": 0.0799,
+      "active_customers": 5532.0
+    },
+    {
+      "year_month": "2024-04",
+      "gross_sales": 75430320.0,
+      "nmv": 64874527.0,
+      "net_revenue": 61435877.0,
+      "net_revenue_mom": 0.124,
+      "margin_pct": 0.2782,
+      "orders": 8696.0,
+      "return_rate": 0.0501,
+      "cancellation_rate": 0.0946,
+      "active_customers": 6162.0
+    },
+    {
+      "year_month": "2024-05",
+      "gross_sales": 60160716.0,
+      "nmv": 51649294.0,
+      "net_revenue": 49332541.0,
+      "net_revenue_mom": -0.197,
+      "margin_pct": 0.2817,
+      "orders": 6802.0,
+      "return_rate": 0.052,
+      "cancellation_rate": 0.0917,
+      "active_customers": 5032.0
+    },
+    {
+      "year_month": "2024-06",
+      "gross_sales": 75384114.0,
+      "nmv": 63173218.0,
+      "net_revenue": 60030633.0,
+      "net_revenue_mom": 0.2169,
+      "margin_pct": 0.2739,
+      "orders": 8739.0,
+      "return_rate": 0.0522,
+      "cancellation_rate": 0.0997,
+      "active_customers": 6094.0
+    },
+    {
+      "year_month": "2024-07",
+      "gross_sales": 64573595.0,
+      "nmv": 55534917.0,
+      "net_revenue": 52812312.0,
+      "net_revenue_mom": -0.1202,
+      "margin_pct": 0.2931,
+      "orders": 7473.0,
+      "return_rate": 0.0579,
+      "cancellation_rate": 0.0921,
+      "active_customers": 5470.0
+    },
+    {
+      "year_month": "2024-08",
+      "gross_sales": 77306117.0,
+      "nmv": 65567794.0,
+      "net_revenue": 62365799.0,
+      "net_revenue_mom": 0.1809,
+      "margin_pct": 0.2744,
+      "orders": 8705.0,
+      "return_rate": 0.0545,
+      "cancellation_rate": 0.084,
+      "active_customers": 6192.0
+    },
+    {
+      "year_month": "2024-09",
+      "gross_sales": 78791483.0,
+      "nmv": 67163670.0,
+      "net_revenue": 63641274.0,
+      "net_revenue_mom": 0.0205,
+      "margin_pct": 0.2694,
+      "orders": 8634.0,
+      "return_rate": 0.0542,
+      "cancellation_rate": 0.0839,
+      "active_customers": 6139.0
+    },
+    {
+      "year_month": "2024-10",
+      "gross_sales": 75688654.0,
+      "nmv": 64402269.0,
+      "net_revenue": 61270052.0,
+      "net_revenue_mom": -0.0373,
+      "margin_pct": 0.2754,
+      "orders": 8265.0,
+      "return_rate": 0.0508,
+      "cancellation_rate": 0.0861,
+      "active_customers": 6006.0
+    },
+    {
+      "year_month": "2024-11",
+      "gross_sales": 96145840.0,
+      "nmv": 78918801.0,
+      "net_revenue": 75239495.0,
+      "net_revenue_mom": 0.228,
+      "margin_pct": 0.2632,
+      "orders": 10688.0,
+      "return_rate": 0.0515,
+      "cancellation_rate": 0.1036,
+      "active_customers": 7201.0
+    },
+    {
+      "year_month": "2024-12",
+      "gross_sales": 89608633.0,
+      "nmv": 72147792.0,
+      "net_revenue": 68841720.0,
+      "net_revenue_mom": -0.085,
+      "margin_pct": 0.2523,
+      "orders": 9710.0,
+      "return_rate": 0.0508,
+      "cancellation_rate": 0.0986,
+      "active_customers": 6708.0
+    },
+    {
+      "year_month": "2025-01",
+      "gross_sales": 80868259.0,
+      "nmv": 68190776.0,
+      "net_revenue": 64417342.0,
+      "net_revenue_mom": -0.0643,
+      "margin_pct": 0.2762,
+      "orders": 8984.0,
+      "return_rate": 0.0527,
+      "cancellation_rate": 0.0889,
+      "active_customers": 6384.0
+    },
+    {
+      "year_month": "2025-02",
+      "gross_sales": 79685025.0,
+      "nmv": 66247592.0,
+      "net_revenue": 62941006.0,
+      "net_revenue_mom": -0.0229,
+      "margin_pct": 0.2646,
+      "orders": 8867.0,
+      "return_rate": 0.0548,
+      "cancellation_rate": 0.0873,
+      "active_customers": 6268.0
+    },
+    {
+      "year_month": "2025-03",
+      "gross_sales": 125448210.0,
+      "nmv": 101305297.0,
+      "net_revenue": 96093410.0,
+      "net_revenue_mom": 0.5267,
+      "margin_pct": 0.2456,
+      "orders": 13663.0,
+      "return_rate": 0.0539,
+      "cancellation_rate": 0.0841,
+      "active_customers": 8896.0
+    },
+    {
+      "year_month": "2025-04",
+      "gross_sales": 85514411.0,
+      "nmv": 69280550.0,
+      "net_revenue": 65824325.0,
+      "net_revenue_mom": -0.315,
+      "margin_pct": 0.2726,
+      "orders": 9362.0,
+      "return_rate": 0.0518,
+      "cancellation_rate": 0.1082,
+      "active_customers": 6450.0
+    },
+    {
+      "year_month": "2025-05",
+      "gross_sales": 95610428.8,
+      "nmv": 77469422.0,
+      "net_revenue": 73643787.0,
+      "net_revenue_mom": 0.1188,
+      "margin_pct": 0.2566,
+      "orders": 10589.0,
+      "return_rate": 0.051,
+      "cancellation_rate": 0.0899,
+      "active_customers": 7221.0
+    },
+    {
+      "year_month": "2025-06",
+      "gross_sales": 114495637.0,
+      "nmv": 89985685.0,
+      "net_revenue": 87031513.0,
+      "net_revenue_mom": 0.1818,
+      "margin_pct": 0.2452,
+      "orders": 12113.0,
+      "return_rate": 0.0398,
+      "cancellation_rate": 0.1034,
+      "active_customers": 7822.0
+    }
+  ],
+  "growth_h1_2025_vs_h1_2024": 0.4601434093638601,
+  "category": [
+    {
+      "category": "Electronics",
+      "gross_sales": 513078845.0,
+      "discounts": 41436650.0,
+      "cancel_loss": 43790241.0,
+      "nmv": 427851954.0,
+      "refunds": 14604290.0,
+      "net_revenue": 413247664.0,
+      "net_rev_share": 0.3618,
+      "margin": 36671069.0,
+      "margin_pct": 0.0887,
+      "leakage_pct": 0.1946,
+      "return_rate": 0.0362,
+      "cancellation_rate": 0.09
+    },
+    {
+      "category": "Fashion",
+      "gross_sales": 293383499.0,
+      "discounts": 23292369.0,
+      "cancel_loss": 24349822.0,
+      "nmv": 245741308.0,
+      "refunds": 22455627.0,
+      "net_revenue": 223285681.0,
+      "net_rev_share": 0.1955,
+      "margin": 94310634.0,
+      "margin_pct": 0.4224,
+      "leakage_pct": 0.2389,
+      "return_rate": 0.0984,
+      "cancellation_rate": 0.0914
+    },
+    {
+      "category": "Home & Kitchen",
+      "gross_sales": 187381290.0,
+      "discounts": 15002509.0,
+      "cancel_loss": 16457421.0,
+      "nmv": 155921360.0,
+      "refunds": 5171504.0,
+      "net_revenue": 150749856.0,
+      "net_rev_share": 0.132,
+      "margin": 43399274.0,
+      "margin_pct": 0.2879,
+      "leakage_pct": 0.1955,
+      "return_rate": 0.0361,
+      "cancellation_rate": 0.0931
+    },
+    {
+      "category": "Mobile & Accessories",
+      "gross_sales": 130479077.0,
+      "discounts": 10528295.0,
+      "cancel_loss": 11531877.0,
+      "nmv": 108418905.0,
+      "refunds": 3592998.0,
+      "net_revenue": 104825907.0,
+      "net_rev_share": 0.0918,
+      "margin": 43747519.0,
+      "margin_pct": 0.4173,
+      "leakage_pct": 0.1966,
+      "return_rate": 0.0353,
+      "cancellation_rate": 0.0938
+    },
+    {
+      "category": "Footwear",
+      "gross_sales": 102465549.0,
+      "discounts": 8316534.0,
+      "cancel_loss": 8607342.0,
+      "nmv": 85541673.0,
+      "refunds": 6078382.0,
+      "net_revenue": 79463291.0,
+      "net_rev_share": 0.0696,
+      "margin": 29656930.0,
+      "margin_pct": 0.3732,
+      "leakage_pct": 0.2245,
+      "return_rate": 0.0777,
+      "cancellation_rate": 0.0908
+    },
+    {
+      "category": "Beauty & Personal Care",
+      "gross_sales": 50166775.0,
+      "discounts": 3937728.0,
+      "cancel_loss": 4202848.0,
+      "nmv": 42026199.0,
+      "refunds": 1480901.0,
+      "net_revenue": 40545298.0,
+      "net_rev_share": 0.0355,
+      "margin": 19057026.0,
+      "margin_pct": 0.47,
+      "leakage_pct": 0.1918,
+      "return_rate": 0.0367,
+      "cancellation_rate": 0.0922
+    },
+    {
+      "category": "Sports & Outdoors",
+      "gross_sales": 45022697.0,
+      "discounts": 3635077.0,
+      "cancel_loss": 3562739.0,
+      "nmv": 37824881.0,
+      "refunds": 1216604.0,
+      "net_revenue": 36608277.0,
+      "net_rev_share": 0.032,
+      "margin": 12927679.0,
+      "margin_pct": 0.3531,
+      "leakage_pct": 0.1869,
+      "return_rate": 0.0356,
+      "cancellation_rate": 0.0894
+    },
+    {
+      "category": "Grocery",
+      "gross_sales": 31178165.0,
+      "discounts": 2541712.0,
+      "cancel_loss": 2461781.0,
+      "nmv": 26174672.0,
+      "refunds": 815442.0,
+      "net_revenue": 25359230.0,
+      "net_rev_share": 0.0222,
+      "margin": 2280147.0,
+      "margin_pct": 0.0899,
+      "leakage_pct": 0.1866,
+      "return_rate": 0.0354,
+      "cancellation_rate": 0.0869
+    },
+    {
+      "category": "Health & Wellness",
+      "gross_sales": 26581967.0,
+      "discounts": 2191623.0,
+      "cancel_loss": 2157721.0,
+      "nmv": 22232623.0,
+      "refunds": 761164.0,
+      "net_revenue": 21471459.0,
+      "net_rev_share": 0.0188,
+      "margin": 8918033.0,
+      "margin_pct": 0.4153,
+      "leakage_pct": 0.1923,
+      "return_rate": 0.0387,
+      "cancellation_rate": 0.0929
+    },
+    {
+      "category": "Toys & Games",
+      "gross_sales": 24512212.0,
+      "discounts": 1985714.0,
+      "cancel_loss": 2101857.0,
+      "nmv": 20424641.0,
+      "refunds": 675808.0,
+      "net_revenue": 19748833.0,
+      "net_rev_share": 0.0173,
+      "margin": 7649945.0,
+      "margin_pct": 0.3874,
+      "leakage_pct": 0.1943,
+      "return_rate": 0.0352,
+      "cancellation_rate": 0.0934
+    },
+    {
+      "category": "Automotive",
+      "gross_sales": 18714595.0,
+      "discounts": 1498702.0,
+      "cancel_loss": 1566288.0,
+      "nmv": 15649605.0,
+      "refunds": 429544.0,
+      "net_revenue": 15220061.0,
+      "net_rev_share": 0.0133,
+      "margin": 4465946.0,
+      "margin_pct": 0.2934,
+      "leakage_pct": 0.1867,
+      "return_rate": 0.0302,
+      "cancellation_rate": 0.0946
+    },
+    {
+      "category": "Books & Stationery",
+      "gross_sales": 9439639.0,
+      "discounts": 769626.0,
+      "cancel_loss": 735777.0,
+      "nmv": 7934236.0,
+      "refunds": 266441.0,
+      "net_revenue": 7667795.0,
+      "net_rev_share": 0.0067,
+      "margin": 1843784.0,
+      "margin_pct": 0.2405,
+      "leakage_pct": 0.1877,
+      "return_rate": 0.0357,
+      "cancellation_rate": 0.0842
+    },
+    {
+      "category": "Unknown",
+      "gross_sales": 4972479.8,
+      "discounts": 385455.0,
+      "cancel_loss": 289595.8,
+      "nmv": 4297429.0,
+      "refunds": 213136.0,
+      "net_revenue": 4084293.0,
+      "net_rev_share": 0.0036,
+      "margin": 1445136.6,
+      "margin_pct": 0.3538,
+      "leakage_pct": 0.1786,
+      "return_rate": 0.0569,
+      "cancellation_rate": 0.0819
+    }
+  ],
+  "province": [
+    {
+      "province": "Punjab",
+      "net_revenue": 557889513.0,
+      "share": 0.4884,
+      "orders": 78590.0,
+      "margin_pct": 0.2685,
+      "return_rate": 0.0526,
+      "cancellation_rate": 0.0933
+    },
+    {
+      "province": "Sindh",
+      "net_revenue": 322917532.0,
+      "share": 0.2827,
+      "orders": 44609.0,
+      "margin_pct": 0.2679,
+      "return_rate": 0.0504,
+      "cancellation_rate": 0.0863
+    },
+    {
+      "province": "Khyber Pakhtunkhwa",
+      "net_revenue": 116358690.0,
+      "share": 0.1019,
+      "orders": 16499.0,
+      "margin_pct": 0.2696,
+      "return_rate": 0.0539,
+      "cancellation_rate": 0.1004
+    },
+    {
+      "province": "Islamabad Capital Territory",
+      "net_revenue": 83715164.0,
+      "share": 0.0733,
+      "orders": 11362.0,
+      "margin_pct": 0.2677,
+      "return_rate": 0.0477,
+      "cancellation_rate": 0.0746
+    },
+    {
+      "province": "Balochistan",
+      "net_revenue": 39795603.0,
+      "share": 0.0348,
+      "orders": 5893.0,
+      "margin_pct": 0.2698,
+      "return_rate": 0.0542,
+      "cancellation_rate": 0.1066
+    },
+    {
+      "province": "Azad Kashmir",
+      "net_revenue": 10248806.0,
+      "share": 0.009,
+      "orders": 1475.0,
+      "margin_pct": 0.2604,
+      "return_rate": 0.0603,
+      "cancellation_rate": 0.1139
+    },
+    {
+      "province": "Gilgit-Baltistan",
+      "net_revenue": 9103741.0,
+      "share": 0.008,
+      "orders": 1266.0,
+      "margin_pct": 0.2597,
+      "return_rate": 0.0543,
+      "cancellation_rate": 0.128
+    },
+    {
+      "province": "Unknown",
+      "net_revenue": 2248596.0,
+      "share": 0.002,
+      "orders": 306.0,
+      "margin_pct": 0.2402,
+      "return_rate": 0.0517,
+      "cancellation_rate": 0.0621
+    }
+  ],
+  "top10_cities": [
+    {
+      "city": "Karachi",
+      "province": "Sindh",
+      "net_revenue": 216362672.0,
+      "share": 0.1894,
+      "orders": 29274.0
+    },
+    {
+      "city": "Lahore",
+      "province": "Punjab",
+      "net_revenue": 175059432.0,
+      "share": 0.1533,
+      "orders": 23781.0
+    },
+    {
+      "city": "Islamabad",
+      "province": "Islamabad Capital Territory",
+      "net_revenue": 83715164.0,
+      "share": 0.0733,
+      "orders": 11362.0
+    },
+    {
+      "city": "Rawalpindi",
+      "province": "Punjab",
+      "net_revenue": 57797729.0,
+      "share": 0.0506,
+      "orders": 8045.0
+    },
+    {
+      "city": "Faisalabad",
+      "province": "Punjab",
+      "net_revenue": 54150166.0,
+      "share": 0.0474,
+      "orders": 7577.0
+    },
+    {
+      "city": "Peshawar",
+      "province": "Khyber Pakhtunkhwa",
+      "net_revenue": 40636576.0,
+      "share": 0.0356,
+      "orders": 5451.0
+    },
+    {
+      "city": "Multan",
+      "province": "Punjab",
+      "net_revenue": 31850264.0,
+      "share": 0.0279,
+      "orders": 4453.0
+    },
+    {
+      "city": "Hyderabad",
+      "province": "Sindh",
+      "net_revenue": 25605904.0,
+      "share": 0.0224,
+      "orders": 3584.0
+    },
+    {
+      "city": "Gujranwala",
+      "province": "Punjab",
+      "net_revenue": 24485098.0,
+      "share": 0.0214,
+      "orders": 3501.0
+    },
+    {
+      "city": "Sialkot",
+      "province": "Punjab",
+      "net_revenue": 19532874.0,
+      "share": 0.0171,
+      "orders": 2735.0
+    }
+  ],
+  "bottom5_cities": [
+    {
+      "city": "JandRahRah",
+      "province": "Sindh",
+      "net_revenue": 55013.0,
+      "share": 0.0,
+      "orders": 10.0
+    },
+    {
+      "city": "RahGola",
+      "province": "Sindh",
+      "net_revenue": 54237.0,
+      "share": 0.0,
+      "orders": 12.0
+    },
+    {
+      "city": "MariBhalChak",
+      "province": "Punjab",
+      "net_revenue": 49925.0,
+      "share": 0.0,
+      "orders": 10.0
+    },
+    {
+      "city": "GarhGulPind",
+      "province": "Punjab",
+      "net_revenue": 41982.0,
+      "share": 0.0,
+      "orders": 18.0
+    },
+    {
+      "city": "NagarChak",
+      "province": "Khyber Pakhtunkhwa",
+      "net_revenue": 17593.0,
+      "share": 0.0,
+      "orders": 4.0
+    }
+  ],
+  "top5_city_share": 0.5139601265680026,
+  "cities_with_orders": 650,
+  "top40_city_share": 0.8112448747081976,
+  "region": [
+    {
+      "region": "Central",
+      "net_revenue": 557889513.0,
+      "share": 0.4884,
+      "orders": 78590.0,
+      "margin_pct": 0.2685
+    },
+    {
+      "region": "North",
+      "net_revenue": 219426401.0,
+      "share": 0.1921,
+      "orders": 30602.0,
+      "margin_pct": 0.268
+    },
+    {
+      "region": "South",
+      "net_revenue": 362713135.0,
+      "share": 0.3175,
+      "orders": 50502.0,
+      "margin_pct": 0.2681
+    },
+    {
+      "region": "Unknown",
+      "net_revenue": 2248596.0,
+      "share": 0.002,
+      "orders": 306.0,
+      "margin_pct": 0.2402
+    }
+  ],
+  "population_tier": [
+    {
+      "population_tier": "Metro",
+      "net_revenue": 627721739.0,
+      "share": 0.5495,
+      "aov": 8309.3237,
+      "return_rate": 0.0486,
+      "cancellation_rate": 0.0746
+    },
+    {
+      "population_tier": "Tier-2",
+      "net_revenue": 174045855.0,
+      "share": 0.1524,
+      "aov": 8273.1829,
+      "return_rate": 0.0531,
+      "cancellation_rate": 0.094
+    },
+    {
+      "population_tier": "Tier-3",
+      "net_revenue": 338261455.0,
+      "share": 0.2961,
+      "aov": 8153.8096,
+      "return_rate": 0.0571,
+      "cancellation_rate": 0.12
+    },
+    {
+      "population_tier": "Unknown",
+      "net_revenue": 2248596.0,
+      "share": 0.002,
+      "aov": 8278.5087,
+      "return_rate": 0.0517,
+      "cancellation_rate": 0.0621
+    }
+  ],
+  "unknown_location_net_rev_share": 0.00196851965880852,
+  "ship_city_imputed_net_rev_share": 0.03743391388877264,
+  "quarterly_rates": [
+    {
+      "q": "2024Q1",
+      "return_rate": 0.0531,
+      "cancellation_rate": 0.0794
+    },
+    {
+      "q": "2024Q2",
+      "return_rate": 0.0514,
+      "cancellation_rate": 0.0956
+    },
+    {
+      "q": "2024Q3",
+      "return_rate": 0.0554,
+      "cancellation_rate": 0.0864
+    },
+    {
+      "q": "2024Q4",
+      "return_rate": 0.0511,
+      "cancellation_rate": 0.0968
+    },
+    {
+      "q": "2025Q1",
+      "return_rate": 0.0538,
+      "cancellation_rate": 0.0864
+    },
+    {
+      "q": "2025Q2",
+      "return_rate": 0.0473,
+      "cancellation_rate": 0.1003
+    }
+  ],
+  "clv": {
+    "definition": "Observed CLV = net revenue (NMV - valid refunds) per active customer over Jan-2024..Jun-2025",
+    "active_customers": 31521,
+    "mean_clv": 36165.51280098982,
+    "median_clv": 18383.0,
+    "mean_margin_per_customer": 9700.517547032137,
+    "mean_orders": 4.6014720345166715,
+    "repeat_purchase_rate": 0.7181561498683418,
+    "top10pct_revenue_share": 0.44216830921459377,
+    "avg_lifespan_days_repeaters": 313.9018421168883
+  },
+  "clv_by_region": [
+    {
+      "region": "Central",
+      "customers": 14805,
+      "clv": 35864.3077,
+      "repeat_rate": 0.7204,
+      "orders_per_cust": 4.5925
+    },
+    {
+      "region": "North",
+      "customers": 5829,
+      "clv": 35893.1357,
+      "repeat_rate": 0.7276,
+      "orders_per_cust": 4.5371
+    },
+    {
+      "region": "South",
+      "customers": 9436,
+      "clv": 36758.0392,
+      "repeat_rate": 0.7114,
+      "orders_per_cust": 4.6635
+    },
+    {
+      "region": "Unknown",
+      "customers": 1451,
+      "clv": 36479.7429,
+      "repeat_rate": 0.7016,
+      "orders_per_cust": 4.5479
+    }
+  ],
+  "repeat_by_acquisition_category": [
+    {
+      "acq_category": "Grocery",
+      "customers": 1333,
+      "repeat_rate": 0.7329,
+      "clv": 33135.4876
+    },
+    {
+      "acq_category": "Automotive",
+      "customers": 570,
+      "repeat_rate": 0.7316,
+      "clv": 36714.2333
+    },
+    {
+      "acq_category": "Mobile & Accessories",
+      "customers": 5101,
+      "repeat_rate": 0.7265,
+      "clv": 32923.9255
+    },
+    {
+      "acq_category": "Electronics",
+      "customers": 4423,
+      "repeat_rate": 0.7233,
+      "clv": 50332.1872
+    },
+    {
+      "acq_category": "Books & Stationery",
+      "customers": 523,
+      "repeat_rate": 0.7208,
+      "clv": 26279.0784
+    },
+    {
+      "acq_category": "Home & Kitchen",
+      "customers": 4566,
+      "repeat_rate": 0.7162,
+      "clv": 35857.7867
+    },
+    {
+      "acq_category": "Fashion",
+      "customers": 7651,
+      "repeat_rate": 0.716,
+      "clv": 34684.6031
+    },
+    {
+      "acq_category": "Health & Wellness",
+      "customers": 870,
+      "repeat_rate": 0.7149,
+      "clv": 32241.1839
+    },
+    {
+      "acq_category": "Beauty & Personal Care",
+      "customers": 1948,
+      "repeat_rate": 0.7146,
+      "clv": 29527.4399
+    },
+    {
+      "acq_category": "Sports & Outdoors",
+      "customers": 1297,
+      "repeat_rate": 0.7078,
+      "clv": 35652.0756
+    },
+    {
+      "acq_category": "Toys & Games",
+      "customers": 890,
+      "repeat_rate": 0.7056,
+      "clv": 30802.8045
+    },
+    {
+      "acq_category": "Footwear",
+      "customers": 2258,
+      "repeat_rate": 0.7042,
+      "clv": 34522.2662
+    },
+    {
+      "acq_category": "Unknown",
+      "customers": 91,
+      "repeat_rate": 0.6923,
+      "clv": 47185.6593
+    }
+  ],
+  "category_rebuy_rate": [
+    {
+      "category": "Mobile & Accessories",
+      "rebuy_rate": 0.5242
+    },
+    {
+      "category": "Fashion",
+      "rebuy_rate": 0.5186
+    },
+    {
+      "category": "Home & Kitchen",
+      "rebuy_rate": 0.4282
+    },
+    {
+      "category": "Beauty & Personal Care",
+      "rebuy_rate": 0.3522
+    },
+    {
+      "category": "Electronics",
+      "rebuy_rate": 0.3455
+    },
+    {
+      "category": "Grocery",
+      "rebuy_rate": 0.3138
+    },
+    {
+      "category": "Footwear",
+      "rebuy_rate": 0.2917
+    },
+    {
+      "category": "Sports & Outdoors",
+      "rebuy_rate": 0.2295
+    },
+    {
+      "category": "Health & Wellness",
+      "rebuy_rate": 0.2185
+    },
+    {
+      "category": "Toys & Games",
+      "rebuy_rate": 0.2137
+    },
+    {
+      "category": "Books & Stationery",
+      "rebuy_rate": 0.186
+    },
+    {
+      "category": "Automotive",
+      "rebuy_rate": 0.1342
+    },
+    {
+      "category": "Unknown",
+      "rebuy_rate": 0.0328
+    }
+  ],
+  "cohort_m1_retention_avg": 0.1395511726128017,
+  "cohort_m3_retention_avg": 0.15374517893727244,
+  "new_vs_returning_share": {
+    "new": 0.21857989963552163,
+    "returning": 0.7794026258826067
+  },
+  "rfm_segments": [
+    {
+      "segment": "Champions",
+      "customers": 5512,
+      "net_revenue": 586856469.0,
+      "avg_clv": 106468.8804,
+      "avg_orders": 13.3799,
+      "customer_share": 0.1749,
+      "revenue_share": 0.5148
+    },
+    {
+      "segment": "Loyal Customers",
+      "customers": 5353,
+      "net_revenue": 226069648.0,
+      "avg_clv": 42232.3273,
+      "avg_orders": 5.5761,
+      "customer_share": 0.1698,
+      "revenue_share": 0.1983
+    },
+    {
+      "segment": "Hibernating",
+      "customers": 9739,
+      "net_revenue": 78696551.0,
+      "avg_clv": 8080.5577,
+      "avg_orders": 1.4872,
+      "customer_share": 0.309,
+      "revenue_share": 0.069
+    },
+    {
+      "segment": "At Risk",
+      "customers": 1592,
+      "net_revenue": 63268125.0,
+      "avg_clv": 39741.2845,
+      "avg_orders": 5.0678,
+      "customer_share": 0.0505,
+      "revenue_share": 0.0555
+    },
+    {
+      "segment": "Need Attention",
+      "customers": 3641,
+      "net_revenue": 57148704.0,
+      "avg_clv": 15695.8814,
+      "avg_orders": 1.9563,
+      "customer_share": 0.1155,
+      "revenue_share": 0.0501
+    },
+    {
+      "segment": "Potential Loyalists",
+      "customers": 1975,
+      "net_revenue": 56549150.0,
+      "avg_clv": 28632.481,
+      "avg_orders": 2.442,
+      "customer_share": 0.0627,
+      "revenue_share": 0.0496
+    },
+    {
+      "segment": "Cannot Lose Them",
+      "customers": 1278,
+      "net_revenue": 56143973.0,
+      "avg_clv": 43931.1213,
+      "avg_orders": 2.1424,
+      "customer_share": 0.0405,
+      "revenue_share": 0.0493
+    },
+    {
+      "segment": "Others",
+      "customers": 1328,
+      "net_revenue": 10072495.0,
+      "avg_clv": 7584.7101,
+      "avg_orders": 2.3381,
+      "customer_share": 0.0421,
+      "revenue_share": 0.0088
+    },
+    {
+      "segment": "New Customers",
+      "customers": 1103,
+      "net_revenue": 5168014.0,
+      "avg_clv": 4685.4161,
+      "avg_orders": 1.0,
+      "customer_share": 0.035,
+      "revenue_share": 0.0045
+    }
+  ],
+  "seller_score": {
+    "weights": {
+      "net_revenue (percentile of log)": 0.3,
+      "return_rate (lower better)": 0.25,
+      "on_time_rate": 0.25,
+      "cancellation_rate (lower better)": 0.2
+    },
+    "eligible_sellers": 356,
+    "min_delivered_lines": 100,
+    "top10": [
+      {
+        "seller_id": "S0253",
+        "seller_name": "Al-Noor Collection 46",
+        "seller_tier": "Silver",
+        "net_revenue": 6207858.0,
+        "return_rate": 0.0235,
+        "on_time_rate": 0.7173,
+        "cancellation_rate": 0.0827,
+        "score": 88.75
+      },
+      {
+        "seller_id": "S0197",
+        "seller_name": "Prime Store 57",
+        "seller_tier": "Bronze",
+        "net_revenue": 7528769.0,
+        "return_rate": 0.0105,
+        "on_time_rate": 0.7105,
+        "cancellation_rate": 0.0842,
+        "score": 86.52
+      },
+      {
+        "seller_id": "S0375",
+        "seller_name": "Lahore Collection 67",
+        "seller_tier": "Silver",
+        "net_revenue": 6545312.0,
+        "return_rate": 0.0282,
+        "on_time_rate": 0.6821,
+        "cancellation_rate": 0.0731,
+        "score": 82.29
+      },
+      {
+        "seller_id": "S0139",
+        "seller_name": "Pak Collection 91",
+        "seller_tier": "Gold",
+        "net_revenue": 12063851.0,
+        "return_rate": 0.036,
+        "on_time_rate": 0.7203,
+        "cancellation_rate": 0.0867,
+        "score": 79.8
+      },
+      {
+        "seller_id": "S0199",
+        "seller_name": "Crown Imports 33",
+        "seller_tier": "Silver",
+        "net_revenue": 11240695.0,
+        "return_rate": 0.0434,
+        "on_time_rate": 0.6908,
+        "cancellation_rate": 0.0689,
+        "score": 79.68
+      },
+      {
+        "seller_id": "S0136",
+        "seller_name": "Zam Zam Store 79",
+        "seller_tier": "Bronze",
+        "net_revenue": 3441039.0,
+        "return_rate": 0.0314,
+        "on_time_rate": 0.7108,
+        "cancellation_rate": 0.0799,
+        "score": 79.34
+      },
+      {
+        "seller_id": "S0019",
+        "seller_name": "Prime Mart 22",
+        "seller_tier": "Silver",
+        "net_revenue": 10672333.0,
+        "return_rate": 0.0362,
+        "on_time_rate": 0.6934,
+        "cancellation_rate": 0.0874,
+        "score": 75.25
+      },
+      {
+        "seller_id": "S0413",
+        "seller_name": "Smart Solutions 98",
+        "seller_tier": "Silver",
+        "net_revenue": 6588021.0,
+        "return_rate": 0.0294,
+        "on_time_rate": 0.6912,
+        "cancellation_rate": 0.0942,
+        "score": 74.31
+      },
+      {
+        "seller_id": "S0363",
+        "seller_name": "Smart Collection 60",
+        "seller_tier": "Gold",
+        "net_revenue": 5728416.0,
+        "return_rate": 0.0256,
+        "on_time_rate": 0.7079,
+        "cancellation_rate": 0.1042,
+        "score": 74.17
+      },
+      {
+        "seller_id": "S0417",
+        "seller_name": "Best Brothers 42",
+        "seller_tier": "Gold",
+        "net_revenue": 4037113.0,
+        "return_rate": 0.03,
+        "on_time_rate": 0.6852,
+        "cancellation_rate": 0.084,
+        "score": 73.61
+      }
+    ],
+    "bottom10": [
+      {
+        "seller_id": "S0266",
+        "seller_name": "Urban Collection 37",
+        "seller_tier": "Bronze",
+        "net_revenue": 821226.0,
+        "return_rate": 0.0478,
+        "on_time_rate": 0.6454,
+        "cancellation_rate": 0.1028,
+        "score": 23.31
+      },
+      {
+        "seller_id": "S0222",
+        "seller_name": "Best Enterprises 2",
+        "seller_tier": "Bronze",
+        "net_revenue": 562725.0,
+        "return_rate": 0.0606,
+        "on_time_rate": 0.6606,
+        "cancellation_rate": 0.0992,
+        "score": 22.75
+      },
+      {
+        "seller_id": "S0342",
+        "seller_name": "ZAM ZAM STORE 23",
+        "seller_tier": "Unknown",
+        "net_revenue": 1141818.0,
+        "return_rate": 0.0675,
+        "on_time_rate": 0.6462,
+        "cancellation_rate": 0.1121,
+        "score": 20.77
+      },
+      {
+        "seller_id": "S0113",
+        "seller_name": "Habib Hub 36",
+        "seller_tier": "Bronze",
+        "net_revenue": 855183.0,
+        "return_rate": 0.0723,
+        "on_time_rate": 0.6506,
+        "cancellation_rate": 0.1039,
+        "score": 20.01
+      },
+      {
+        "seller_id": "S0177",
+        "seller_name": "Royal Collection 82",
+        "seller_tier": "Bronze",
+        "net_revenue": 1462176.0,
+        "return_rate": 0.0828,
+        "on_time_rate": 0.6242,
+        "cancellation_rate": 0.1048,
+        "score": 19.96
+      },
+      {
+        "seller_id": "S0169",
+        "seller_name": "Habib Hub 71",
+        "seller_tier": "Bronze",
+        "net_revenue": 715671.0,
+        "return_rate": 0.0546,
+        "on_time_rate": 0.6753,
+        "cancellation_rate": 0.1074,
+        "score": 19.55
+      },
+      {
+        "seller_id": "S0306",
+        "seller_name": "Habib Traders 10",
+        "seller_tier": "Bronze",
+        "net_revenue": 549908.0,
+        "return_rate": 0.0773,
+        "on_time_rate": 0.6352,
+        "cancellation_rate": 0.092,
+        "score": 18.9
+      },
+      {
+        "seller_id": "S0214",
+        "seller_name": "Metro Mart 69",
+        "seller_tier": "Bronze",
+        "net_revenue": 105396.0,
+        "return_rate": 0.0403,
+        "on_time_rate": 0.6613,
+        "cancellation_rate": 0.1135,
+        "score": 17.51
+      },
+      {
+        "seller_id": "S0385",
+        "seller_name": "Lahore Collection 21",
+        "seller_tier": "Bronze",
+        "net_revenue": 474944.0,
+        "return_rate": 0.0833,
+        "on_time_rate": 0.6979,
+        "cancellation_rate": 0.1015,
+        "score": 15.48
+      },
+      {
+        "seller_id": "S0276",
+        "seller_name": "Pak Collection 16",
+        "seller_tier": "Bronze",
+        "net_revenue": 173996.0,
+        "return_rate": 0.0459,
+        "on_time_rate": 0.6239,
+        "cancellation_rate": 0.1057,
+        "score": 14.24
+      }
+    ]
+  },
+  "seller_tier": [
+    {
+      "seller_tier": "Bronze",
+      "net_revenue": 398180761.0,
+      "return_rate": 0.0499,
+      "cancellation_rate": 0.0913,
+      "on_time_rate": 0.6842,
+      "avg_delivery_days": 4.3088,
+      "score_mean": 46.2014
+    },
+    {
+      "seller_tier": "Gold",
+      "net_revenue": 278956400.0,
+      "return_rate": 0.0537,
+      "cancellation_rate": 0.0932,
+      "on_time_rate": 0.6853,
+      "avg_delivery_days": 4.3128,
+      "score_mean": 58.4382
+    },
+    {
+      "seller_tier": "Silver",
+      "net_revenue": 363834791.0,
+      "return_rate": 0.0533,
+      "cancellation_rate": 0.0914,
+      "on_time_rate": 0.6855,
+      "avg_delivery_days": 4.3028,
+      "score_mean": 54.7615
+    },
+    {
+      "seller_tier": "Unknown",
+      "net_revenue": 101305693.0,
+      "return_rate": 0.0418,
+      "cancellation_rate": 0.0923,
+      "on_time_rate": 0.6901,
+      "avg_delivery_days": 4.3026,
+      "score_mean": 49.7784
+    }
+  ],
+  "on_time": {
+    "definition": "Delivered within 5 days of order date (median 4 days; 5 days covers ~3/4 of deliveries)",
+    "on_time_rate_orders": 0.6855436330173282,
+    "return_rate_on_time": 0.0486057499305191,
+    "return_rate_late": 0.058957322607029614
+  },
+  "return_rate_by_delivery_days": [
+    {
+      "days": 0.0,
+      "mean": 0.0275,
+      "size": 109
+    },
+    {
+      "days": 1.0,
+      "mean": 0.0501,
+      "size": 14564
+    },
+    {
+      "days": 2.0,
+      "mean": 0.0486,
+      "size": 42644
+    },
+    {
+      "days": 3.0,
+      "mean": 0.0481,
+      "size": 55332
+    },
+    {
+      "days": 4.0,
+      "mean": 0.0487,
+      "size": 48340
+    },
+    {
+      "days": 5.0,
+      "mean": 0.0487,
+      "size": 33309
+    },
+    {
+      "days": 6.0,
+      "mean": 0.0541,
+      "size": 22181
+    },
+    {
+      "days": 7.0,
+      "mean": 0.0623,
+      "size": 14005
+    },
+    {
+      "days": 8.0,
+      "mean": 0.0707,
+      "size": 9218
+    },
+    {
+      "days": 9.0,
+      "mean": 0.0696,
+      "size": 5892
+    },
+    {
+      "days": 10.0,
+      "mean": 0.0698,
+      "size": 3752
+    },
+    {
+      "days": 11.0,
+      "mean": 0.0662,
+      "size": 2341
+    },
+    {
+      "days": 12.0,
+      "mean": 0.0674,
+      "size": 3992
+    }
+  ],
+  "return_reasons": [
+    {
+      "return_reason": "Size/fit issue",
+      "share": 0.1622
+    },
+    {
+      "return_reason": "Not specified",
+      "share": 0.1484
+    },
+    {
+      "return_reason": "Not as described",
+      "share": 0.1463
+    },
+    {
+      "return_reason": "Quality issue",
+      "share": 0.1365
+    },
+    {
+      "return_reason": "Damaged product",
+      "share": 0.1363
+    },
+    {
+      "return_reason": "Changed mind",
+      "share": 0.1072
+    },
+    {
+      "return_reason": "Wrong item delivered",
+      "share": 0.0528
+    },
+    {
+      "return_reason": "Colour mismatch",
+      "share": 0.0439
+    },
+    {
+      "return_reason": "Late delivery",
+      "share": 0.0401
+    },
+    {
+      "return_reason": "Missing parts",
+      "share": 0.0263
+    }
+  ],
+  "late_delivery_reason_share": {
+    "on_time": 0.03939008894536213,
+    "late": 0.041239072595971114
+  },
+  "seller_corr": {
+    "on_time_vs_cancellation": 0.010412544599600742,
+    "on_time_vs_return": 0.09184678337816558
+  },
+  "courier": [
+    {
+      "courier": "BlueEx",
+      "orders": 12081.0,
+      "on_time_rate": 0.6893,
+      "avg_delivery_days": 4.3094,
+      "return_rate": 0.0522,
+      "cancellation_rate": 0.0392
+    },
+    {
+      "courier": "Leopards",
+      "orders": 33352.0,
+      "on_time_rate": 0.6829,
+      "avg_delivery_days": 4.317,
+      "return_rate": 0.0525,
+      "cancellation_rate": 0.0392
+    },
+    {
+      "courier": "M&P",
+      "orders": 22739.0,
+      "on_time_rate": 0.6858,
+      "avg_delivery_days": 4.3112,
+      "return_rate": 0.0522,
+      "cancellation_rate": 0.0381
+    },
+    {
+      "courier": "PostEx",
+      "orders": 18070.0,
+      "on_time_rate": 0.6826,
+      "avg_delivery_days": 4.3077,
+      "return_rate": 0.0524,
+      "cancellation_rate": 0.0383
+    },
+    {
+      "courier": "TCS",
+      "orders": 45402.0,
+      "on_time_rate": 0.6867,
+      "avg_delivery_days": 4.2989,
+      "return_rate": 0.0502,
+      "cancellation_rate": 0.0389
+    },
+    {
+      "courier": "Trax",
+      "orders": 19584.0,
+      "on_time_rate": 0.6852,
+      "avg_delivery_days": 4.3061,
+      "return_rate": 0.0536,
+      "cancellation_rate": 0.0402
+    }
+  ],
+  "high_sales_high_return": {
+    "rule": "top-quartile net revenue AND return rate >= 2x overall, min 30 delivered lines",
+    "count": 53,
+    "products": [
+      {
+        "product_id": "P00117",
+        "product_name": "Generic Cotton Kurta H863",
+        "category": "Fashion",
+        "net_revenue": 3177789.0,
+        "delivered_lines": 214.0,
+        "return_rate": 0.1215
+      },
+      {
+        "product_id": "P02515",
+        "product_name": "Orion Abaya Y106",
+        "category": "Fashion",
+        "net_revenue": 2411067.0,
+        "delivered_lines": 390.0,
+        "return_rate": 0.1718
+      },
+      {
+        "product_id": "P02695",
+        "product_name": "FashPro Abaya G370",
+        "category": "Fashion",
+        "net_revenue": 2261369.0,
+        "delivered_lines": 405.0,
+        "return_rate": 0.1457
+      },
+      {
+        "product_id": "P00712",
+        "product_name": "Zeta Abaya L431",
+        "category": "Fashion",
+        "net_revenue": 1858001.0,
+        "delivered_lines": 321.0,
+        "return_rate": 0.1433
+      },
+      {
+        "product_id": "P00633",
+        "product_name": "Orion Denim Jeans L140",
+        "category": "Fashion",
+        "net_revenue": 1835837.0,
+        "delivered_lines": 253.0,
+        "return_rate": 0.1186
+      },
+      {
+        "product_id": "P01191",
+        "product_name": "FootPro Sneakers F595",
+        "category": "Footwear",
+        "net_revenue": 1763636.0,
+        "delivered_lines": 189.0,
+        "return_rate": 0.127
+      },
+      {
+        "product_id": "P00990",
+        "product_name": "Orion Lawn Suit 3pc V812",
+        "category": "Fashion",
+        "net_revenue": 1763219.0,
+        "delivered_lines": 106.0,
+        "return_rate": 0.1321
+      },
+      {
+        "product_id": "P01410",
+        "product_name": "FashPro Lawn Suit 3pc A190",
+        "category": "Fashion",
+        "net_revenue": 1716437.0,
+        "delivered_lines": 385.0,
+        "return_rate": 0.1662
+      },
+      {
+        "product_id": "P02732",
+        "product_name": "Zeta Abaya N607",
+        "category": "Fashion",
+        "net_revenue": 1694761.0,
+        "delivered_lines": 324.0,
+        "return_rate": 0.1543
+      },
+      {
+        "product_id": "P01676",
+        "product_name": "FashPro Hoodie L219",
+        "category": "Fashion",
+        "net_revenue": 1651782.0,
+        "delivered_lines": 327.0,
+        "return_rate": 0.1437
+      },
+      {
+        "product_id": "P00617",
+        "product_name": "Generic Abaya S638",
+        "category": "Fashion",
+        "net_revenue": 1484695.0,
+        "delivered_lines": 319.0,
+        "return_rate": 0.1066
+      },
+      {
+        "product_id": "P00696",
+        "product_name": "Orion Abaya J789",
+        "category": "Fashion",
+        "net_revenue": 1448184.0,
+        "delivered_lines": 220.0,
+        "return_rate": 0.1182
+      },
+      {
+        "product_id": "P02517",
+        "product_name": "NexusChoice Polo Shirt E494",
+        "category": "Fashion",
+        "net_revenue": 1434417.0,
+        "delivered_lines": 428.0,
+        "return_rate": 0.1051
+      },
+      {
+        "product_id": "P02912",
+        "product_name": "NexusChoice Cotton Kurta D130",
+        "category": "Fashion",
+        "net_revenue": 1285754.0,
+        "delivered_lines": 161.0,
+        "return_rate": 0.1118
+      },
+      {
+        "product_id": "P02304",
+        "product_name": "NexusChoice Polo Shirt T257",
+        "category": "Fashion",
+        "net_revenue": 1034793.0,
+        "delivered_lines": 199.0,
+        "return_rate": 0.191
+      }
+    ]
+  },
+  "hot_products_seller_concentration": {
+    "sellers_involved": 28,
+    "top5_sellers_share_of_returns": 0.6252478519497686,
+    "top5": [
+      {
+        "seller_id": "S0203",
+        "lines": 1990,
+        "returns": 283,
+        "rr": 0.1422,
+        "share_of_returns": 0.187
+      },
+      {
+        "seller_id": "S0308",
+        "lines": 1732,
+        "returns": 270,
+        "rr": 0.1559,
+        "share_of_returns": 0.1785
+      },
+      {
+        "seller_id": "S0376",
+        "lines": 1217,
+        "returns": 191,
+        "rr": 0.1569,
+        "share_of_returns": 0.1262
+      },
+      {
+        "seller_id": "S0310",
+        "lines": 1020,
+        "returns": 111,
+        "rr": 0.1088,
+        "share_of_returns": 0.0734
+      },
+      {
+        "seller_id": "S0109",
+        "lines": 579,
+        "returns": 91,
+        "rr": 0.1572,
+        "share_of_returns": 0.0601
+      }
+    ],
+    "sellers_per_product_median": 1.0
+  },
+  "seller_return_rate_spread": {
+    "p10": 0.025014076283027133,
+    "median": 0.04,
+    "p90": 0.08313008130081301,
+    "max": 0.15843270868824533
+  },
+  "event_summary": [
+    {
+      "event_name": "11.11",
+      "days": 1,
+      "net_rev_per_day": 6225872.0,
+      "orders_per_day": 787.0,
+      "return_rate": 0.052,
+      "cancellation_rate": 0.0877,
+      "aov": 9036.3691,
+      "uplift_vs_normal": 2.1277
+    },
+    {
+      "event_name": "14 August",
+      "days": 1,
+      "net_rev_per_day": 2635915.0,
+      "orders_per_day": 403.0,
+      "return_rate": 0.0519,
+      "cancellation_rate": 0.0844,
+      "aov": 7467.2602,
+      "uplift_vs_normal": 0.3242
+    },
+    {
+      "event_name": "Black Friday",
+      "days": 1,
+      "net_rev_per_day": 4948482.0,
+      "orders_per_day": 621.0,
+      "return_rate": 0.0541,
+      "cancellation_rate": 0.0837,
+      "aov": 9138.3989,
+      "uplift_vs_normal": 1.486
+    },
+    {
+      "event_name": "Eid-ul-Adha",
+      "days": 6,
+      "net_rev_per_day": 2183856.5,
+      "orders_per_day": 310.8333,
+      "return_rate": 0.0535,
+      "cancellation_rate": 0.1153,
+      "aov": 8414.2782,
+      "uplift_vs_normal": 0.0971
+    },
+    {
+      "event_name": "Eid-ul-Fitr",
+      "days": 6,
+      "net_rev_per_day": 1918150.6667,
+      "orders_per_day": 269.1667,
+      "return_rate": 0.0521,
+      "cancellation_rate": 0.1294,
+      "aov": 8559.7646,
+      "uplift_vs_normal": -0.0364
+    },
+    {
+      "event_name": "Normal day",
+      "days": 472,
+      "net_rev_per_day": 1990532.6822,
+      "orders_per_day": 278.7288,
+      "return_rate": 0.0517,
+      "cancellation_rate": 0.0923,
+      "aov": 8262.0938,
+      "uplift_vs_normal": 0.0
+    },
+    {
+      "event_name": "Ramadan",
+      "days": 60,
+      "net_rev_per_day": 2738731.7833,
+      "orders_per_day": 385.8167,
+      "return_rate": 0.0526,
+      "cancellation_rate": 0.0836,
+      "aov": 8158.9737,
+      "uplift_vs_normal": 0.3759
+    }
+  ],
+  "festival_windows": [
+    {
+      "index": "Ramadan 2024",
+      "days": 30.0,
+      "net_rev_per_day": 2355851.9667,
+      "pre28_net_rev_per_day": 1413593.0357,
+      "uplift_vs_prior_28d": 0.6666,
+      "return_rate": 0.0511,
+      "pre_return_rate": 0.0538,
+      "cancellation_rate": 0.0831,
+      "pre_cancellation_rate": 0.0801,
+      "aov": 8254.8538,
+      "pre_aov": 8378.5418
+    },
+    {
+      "index": "Eid-ul-Fitr 2024",
+      "days": 3.0,
+      "net_rev_per_day": 1777727.0,
+      "pre28_net_rev_per_day": 2372982.5,
+      "uplift_vs_prior_28d": -0.2508,
+      "return_rate": 0.0437,
+      "pre_return_rate": 0.0504,
+      "cancellation_rate": 0.1355,
+      "pre_cancellation_rate": 0.0837,
+      "aov": 9633.4878,
+      "pre_aov": 8226.4761
+    },
+    {
+      "index": "Eid-ul-Adha 2024",
+      "days": 3.0,
+      "net_rev_per_day": 1732738.0,
+      "pre28_net_rev_per_day": 2078222.7857,
+      "uplift_vs_prior_28d": -0.1662,
+      "return_rate": 0.0543,
+      "pre_return_rate": 0.0524,
+      "cancellation_rate": 0.105,
+      "pre_cancellation_rate": 0.0846,
+      "aov": 8139.4663,
+      "pre_aov": 8201.2939
+    },
+    {
+      "index": "14 Aug 2024",
+      "days": 1.0,
+      "net_rev_per_day": 2635915.0,
+      "pre28_net_rev_per_day": 1925808.6071,
+      "uplift_vs_prior_28d": 0.3687,
+      "return_rate": 0.0519,
+      "pre_return_rate": 0.0586,
+      "cancellation_rate": 0.0844,
+      "pre_cancellation_rate": 0.0895,
+      "aov": 7467.2602,
+      "pre_aov": 8172.3597
+    },
+    {
+      "index": "11.11 2024",
+      "days": 1.0,
+      "net_rev_per_day": 6225872.0,
+      "pre28_net_rev_per_day": 2261847.8214,
+      "uplift_vs_prior_28d": 1.7526,
+      "return_rate": 0.052,
+      "pre_return_rate": 0.0513,
+      "cancellation_rate": 0.0877,
+      "pre_cancellation_rate": 0.0864,
+      "aov": 9036.3691,
+      "pre_aov": 8419.5731
+    },
+    {
+      "index": "Black Friday 2024",
+      "days": 1.0,
+      "net_rev_per_day": 4948482.0,
+      "pre28_net_rev_per_day": 2385614.0357,
+      "uplift_vs_prior_28d": 1.0743,
+      "return_rate": 0.0541,
+      "pre_return_rate": 0.0514,
+      "cancellation_rate": 0.0837,
+      "pre_cancellation_rate": 0.1032,
+      "aov": 9138.3989,
+      "pre_aov": 8185.7047
+    },
+    {
+      "index": "Ramadan 2025",
+      "days": 30.0,
+      "net_rev_per_day": 3121611.6,
+      "pre28_net_rev_per_day": 2247893.0714,
+      "uplift_vs_prior_28d": 0.3887,
+      "return_rate": 0.0536,
+      "pre_return_rate": 0.0548,
+      "cancellation_rate": 0.0839,
+      "pre_cancellation_rate": 0.0873,
+      "aov": 8088.1872,
+      "pre_aov": 8185.7892
+    },
+    {
+      "index": "Eid-ul-Fitr 2025",
+      "days": 3.0,
+      "net_rev_per_day": 2058574.3333,
+      "pre28_net_rev_per_day": 3143557.9286,
+      "uplift_vs_prior_28d": -0.3451,
+      "return_rate": 0.0578,
+      "pre_return_rate": 0.0536,
+      "cancellation_rate": 0.1251,
+      "pre_cancellation_rate": 0.0834,
+      "aov": 7818.9988,
+      "pre_aov": 8104.7632
+    },
+    {
+      "index": "Eid-ul-Adha 2025",
+      "days": 3.0,
+      "net_rev_per_day": 2634975.0,
+      "pre28_net_rev_per_day": 2877477.3214,
+      "uplift_vs_prior_28d": -0.0843,
+      "return_rate": 0.0531,
+      "pre_return_rate": 0.0499,
+      "cancellation_rate": 0.1224,
+      "pre_cancellation_rate": 0.089,
+      "aov": 8607.8957,
+      "pre_aov": 8043.2302
+    }
+  ],
+  "avg_net_rev_by_weekday": {
+    "Friday": 2024411.0,
+    "Monday": 2026525.0,
+    "Saturday": 2312782.0,
+    "Sunday": 2288376.0,
+    "Thursday": 1983320.0,
+    "Tuesday": 1993197.0,
+    "Wednesday": 1989994.0
+  },
+  "discount_bands": [
+    {
+      "band": "0%",
+      "orders": 109871.0,
+      "order_share": 0.6867,
+      "gross_per_order": 8698.4194,
+      "aov": 8704.1451,
+      "discount_rate": 0.0,
+      "net_revenue": 827824904.0,
+      "margin_pct": 0.3254,
+      "return_rate": 0.0512,
+      "cancellation_rate": 0.091
+    },
+    {
+      "band": "5-10%",
+      "orders": 13874.0,
+      "order_share": 0.0867,
+      "gross_per_order": 8561.5138,
+      "aov": 7831.6739,
+      "discount_rate": 0.0797,
+      "net_revenue": 94453896.0,
+      "margin_pct": 0.2716,
+      "return_rate": 0.049,
+      "cancellation_rate": 0.0878
+    },
+    {
+      "band": "15-20%",
+      "orders": 16252.0,
+      "order_share": 0.1016,
+      "gross_per_order": 8718.2477,
+      "aov": 7171.3279,
+      "discount_rate": 0.1732,
+      "net_revenue": 100840368.0,
+      "margin_pct": 0.1854,
+      "return_rate": 0.0522,
+      "cancellation_rate": 0.0908
+    },
+    {
+      "band": "25-30%",
+      "orders": 10429.0,
+      "order_share": 0.0652,
+      "gross_per_order": 8710.3902,
+      "aov": 6249.135,
+      "discount_rate": 0.2783,
+      "net_revenue": 56630077.0,
+      "margin_pct": 0.0711,
+      "return_rate": 0.0492,
+      "cancellation_rate": 0.0879
+    },
+    {
+      "band": "40-50%",
+      "orders": 9574.0,
+      "order_share": 0.0598,
+      "gross_per_order": 13616.1152,
+      "aov": 7769.4346,
+      "discount_rate": 0.4314,
+      "net_revenue": 62528400.0,
+      "margin_pct": -0.1819,
+      "return_rate": 0.0628,
+      "cancellation_rate": 0.1106
+    }
+  ],
+  "discount_monthly": [
+    {
+      "year_month": "2024-01",
+      "discount_rate": 0.0308,
+      "discounted_order_share": 0.1892,
+      "avg_pct_when_discounted": 15.5807
+    },
+    {
+      "year_month": "2024-02",
+      "discount_rate": 0.0323,
+      "discounted_order_share": 0.1893,
+      "avg_pct_when_discounted": 16.4354
+    },
+    {
+      "year_month": "2024-03",
+      "discount_rate": 0.0481,
+      "discounted_order_share": 0.2589,
+      "avg_pct_when_discounted": 17.2279
+    },
+    {
+      "year_month": "2024-04",
+      "discount_rate": 0.05,
+      "discounted_order_share": 0.2579,
+      "avg_pct_when_discounted": 17.967
+    },
+    {
+      "year_month": "2024-05",
+      "discount_rate": 0.0469,
+      "discounted_order_share": 0.2332,
+      "avg_pct_when_discounted": 17.8972
+    },
+    {
+      "year_month": "2024-06",
+      "discount_rate": 0.0618,
+      "discounted_order_share": 0.2941,
+      "avg_pct_when_discounted": 18.4397
+    },
+    {
+      "year_month": "2024-07",
+      "discount_rate": 0.0525,
+      "discounted_order_share": 0.2461,
+      "avg_pct_when_discounted": 19.5623
+    },
+    {
+      "year_month": "2024-08",
+      "discount_rate": 0.0674,
+      "discounted_order_share": 0.2873,
+      "avg_pct_when_discounted": 20.026
+    },
+    {
+      "year_month": "2024-09",
+      "discount_rate": 0.0732,
+      "discounted_order_share": 0.3118,
+      "avg_pct_when_discounted": 20.5126
+    },
+    {
+      "year_month": "2024-10",
+      "discount_rate": 0.0638,
+      "discounted_order_share": 0.2716,
+      "avg_pct_when_discounted": 21.0824
+    },
+    {
+      "year_month": "2024-11",
+      "discount_rate": 0.0862,
+      "discounted_order_share": 0.335,
+      "avg_pct_when_discounted": 21.5233
+    },
+    {
+      "year_month": "2024-12",
+      "discount_rate": 0.0993,
+      "discounted_order_share": 0.3645,
+      "avg_pct_when_discounted": 22.3778
+    },
+    {
+      "year_month": "2025-01",
+      "discount_rate": 0.0796,
+      "discounted_order_share": 0.3045,
+      "avg_pct_when_discounted": 23.0464
+    },
+    {
+      "year_month": "2025-02",
+      "discount_rate": 0.093,
+      "discounted_order_share": 0.3302,
+      "avg_pct_when_discounted": 23.4665
+    },
+    {
+      "year_month": "2025-03",
+      "discount_rate": 0.1205,
+      "discounted_order_share": 0.4129,
+      "avg_pct_when_discounted": 24.0605
+    },
+    {
+      "year_month": "2025-04",
+      "discount_rate": 0.0958,
+      "discounted_order_share": 0.3389,
+      "avg_pct_when_discounted": 24.4059
+    },
+    {
+      "year_month": "2025-05",
+      "discount_rate": 0.1084,
+      "discounted_order_share": 0.3744,
+      "avg_pct_when_discounted": 24.7188
+    },
+    {
+      "year_month": "2025-06",
+      "discount_rate": 0.1236,
+      "discounted_order_share": 0.3981,
+      "avg_pct_when_discounted": 25.5589
+    }
+  ],
+  "province_delivery": [
+    {
+      "province": "Islamabad Capital Territory",
+      "orders": 11362.0,
+      "avg_delivery_days": 3.4542,
+      "on_time_rate": 0.8073,
+      "return_rate": 0.0477,
+      "cancellation_rate": 0.0746
+    },
+    {
+      "province": "Sindh",
+      "orders": 44609.0,
+      "avg_delivery_days": 4.079,
+      "on_time_rate": 0.7188,
+      "return_rate": 0.0504,
+      "cancellation_rate": 0.0863
+    },
+    {
+      "province": "Punjab",
+      "orders": 78590.0,
+      "avg_delivery_days": 4.3433,
+      "on_time_rate": 0.6787,
+      "return_rate": 0.0526,
+      "cancellation_rate": 0.0933
+    },
+    {
+      "province": "Unknown",
+      "orders": 306.0,
+      "avg_delivery_days": 4.3509,
+      "on_time_rate": 0.6809,
+      "return_rate": 0.0517,
+      "cancellation_rate": 0.0621
+    },
+    {
+      "province": "Khyber Pakhtunkhwa",
+      "orders": 16499.0,
+      "avg_delivery_days": 4.7373,
+      "on_time_rate": 0.6268,
+      "return_rate": 0.0539,
+      "cancellation_rate": 0.1004
+    },
+    {
+      "province": "Balochistan",
+      "orders": 5893.0,
+      "avg_delivery_days": 5.3824,
+      "on_time_rate": 0.5256,
+      "return_rate": 0.0542,
+      "cancellation_rate": 0.1066
+    },
+    {
+      "province": "Azad Kashmir",
+      "orders": 1475.0,
+      "avg_delivery_days": 5.7992,
+      "on_time_rate": 0.4712,
+      "return_rate": 0.0603,
+      "cancellation_rate": 0.1139
+    },
+    {
+      "province": "Gilgit-Baltistan",
+      "orders": 1266.0,
+      "avg_delivery_days": 5.9772,
+      "on_time_rate": 0.494,
+      "return_rate": 0.0543,
+      "cancellation_rate": 0.128
+    }
+  ],
+  "province_corr": {
+    "delivery_days_vs_cancellation": 0.9778782479277228,
+    "delivery_days_vs_return": 0.8476987636639746
+  },
+  "region_delivery": [
+    {
+      "region": "Central",
+      "orders": 78590.0,
+      "avg_delivery_days": 4.3433,
+      "on_time_rate": 0.6787,
+      "return_rate": 0.0526,
+      "cancellation_rate": 0.0933
+    },
+    {
+      "region": "North",
+      "orders": 30602.0,
+      "avg_delivery_days": 4.3503,
+      "on_time_rate": 0.6829,
+      "return_rate": 0.0519,
+      "cancellation_rate": 0.0926
+    },
+    {
+      "region": "South",
+      "orders": 50502.0,
+      "avg_delivery_days": 4.2263,
+      "on_time_rate": 0.6968,
+      "return_rate": 0.0508,
+      "cancellation_rate": 0.0886
+    },
+    {
+      "region": "Unknown",
+      "orders": 306.0,
+      "avg_delivery_days": 4.3509,
+      "on_time_rate": 0.6809,
+      "return_rate": 0.0517,
+      "cancellation_rate": 0.0621
+    }
+  ],
+  "city_corr": {
+    "n_cities": 34,
+    "delivery_days_vs_cancellation": 0.9176453491738751,
+    "delivery_days_vs_return": 0.508295178624007
+  },
+  "payment_methods": [
+    {
+      "payment_method": "Bank Transfer",
+      "orders": 10923.0,
+      "order_share": 0.0683,
+      "aov": 8123.073,
+      "return_rate": 0.0501,
+      "cancellation_rate": 0.0395
+    },
+    {
+      "payment_method": "COD",
+      "orders": 83402.0,
+      "order_share": 0.5213,
+      "aov": 8270.0471,
+      "return_rate": 0.0518,
+      "cancellation_rate": 0.1394
+    },
+    {
+      "payment_method": "Card",
+      "orders": 25718.0,
+      "order_share": 0.1607,
+      "aov": 8350.2954,
+      "return_rate": 0.0534,
+      "cancellation_rate": 0.0388
+    },
+    {
+      "payment_method": "EasyPaisa",
+      "orders": 19290.0,
+      "order_share": 0.1206,
+      "aov": 8063.4821,
+      "return_rate": 0.0524,
+      "cancellation_rate": 0.0391
+    },
+    {
+      "payment_method": "JazzCash",
+      "orders": 20667.0,
+      "order_share": 0.1292,
+      "aov": 8344.4506,
+      "return_rate": 0.0507,
+      "cancellation_rate": 0.0413
+    }
+  ],
+  "payment_dq": {
+    "orders_with_split_payments": 4815,
+    "split_orders_with_mixed_methods": 2016,
+    "payment_status_by_order_status": {
+      "Cancelled": {
+        "Cancelled": 11991,
+        "Delivered": 0,
+        "In Transit": 0,
+        "Returned": 0
+      },
+      "Paid": {
+        "Cancelled": 0,
+        "Delivered": 145360,
+        "In Transit": 696,
+        "Returned": 2948
+      },
+      "Pending": {
+        "Cancelled": 0,
+        "Delivered": 0,
+        "In Transit": 697,
+        "Returned": 0
+      },
+      "Refunded": {
+        "Cancelled": 3123,
+        "Delivered": 0,
+        "In Transit": 0,
+        "Returned": 0
+      }
+    },
+    "payments_missing_date_share_by_method": {
+      "Bank Transfer": 0.0358,
+      "COD": 0.0365,
+      "Card": 0.0371,
+      "EasyPaisa": 0.0346,
+      "JazzCash": 0.0369
+    }
+  },
+  "cancellation_type_by_method": {
+    "Bank Transfer": {
+      "cancel_rate": 0.0395,
+      "cancelled_after_shipping": 0.0147
+    },
+    "COD": {
+      "cancel_rate": 0.1394,
+      "cancelled_after_shipping": 0.0559
+    },
+    "Card": {
+      "cancel_rate": 0.0388,
+      "cancelled_after_shipping": 0.0159
+    },
+    "EasyPaisa": {
+      "cancel_rate": 0.0391,
+      "cancelled_after_shipping": 0.0163
+    },
+    "JazzCash": {
+      "cancel_rate": 0.0413,
+      "cancelled_after_shipping": 0.0164
+    }
+  },
+  "cancellation_shipping_waste": {
+    "cancelled_orders_shipped_RTO": 5890,
+    "shipping_cost_on_cancelled_orders": 3330357.9972,
+    "shipping_cost_total": 81886933.9964
+  },
+  "profitability_monthly": [
+    {
+      "year_month": "2024-01",
+      "net_revenue": 40391354.0,
+      "margin": 11740290.0,
+      "margin_pct": 0.2907,
+      "discount_rate": 0.0308,
+      "refund_rate": 0.0509,
+      "cogs_ratio": 0.7093,
+      "shipping_ratio": 0.0599,
+      "contribution_after_shipping": 9320472.0025,
+      "contribution_pct": 0.2308
+    },
+    {
+      "year_month": "2024-02",
+      "net_revenue": 42308261.0,
+      "margin": 11982512.0,
+      "margin_pct": 0.2832,
+      "discount_rate": 0.0323,
+      "refund_rate": 0.0448,
+      "cogs_ratio": 0.7168,
+      "shipping_ratio": 0.0586,
+      "contribution_after_shipping": 9505315.0003,
+      "contribution_pct": 0.2247
+    },
+    {
+      "year_month": "2024-03",
+      "net_revenue": 54656944.0,
+      "margin": 15208072.2,
+      "margin_pct": 0.2782,
+      "discount_rate": 0.0481,
+      "refund_rate": 0.0458,
+      "cogs_ratio": 0.7218,
+      "shipping_ratio": 0.0621,
+      "contribution_after_shipping": 11812005.1993,
+      "contribution_pct": 0.2161
+    },
+    {
+      "year_month": "2024-04",
+      "net_revenue": 61435877.0,
+      "margin": 17091191.4,
+      "margin_pct": 0.2782,
+      "discount_rate": 0.05,
+      "refund_rate": 0.053,
+      "cogs_ratio": 0.7218,
+      "shipping_ratio": 0.0634,
+      "contribution_after_shipping": 13193378.3998,
+      "contribution_pct": 0.2148
+    },
+    {
+      "year_month": "2024-05",
+      "net_revenue": 49332541.0,
+      "margin": 13899207.0,
+      "margin_pct": 0.2817,
+      "discount_rate": 0.0469,
+      "refund_rate": 0.0449,
+      "cogs_ratio": 0.7183,
+      "shipping_ratio": 0.0647,
+      "contribution_after_shipping": 10705768.996,
+      "contribution_pct": 0.217
+    },
+    {
+      "year_month": "2024-06",
+      "net_revenue": 60030633.0,
+      "margin": 16443523.6,
+      "margin_pct": 0.2739,
+      "discount_rate": 0.0618,
+      "refund_rate": 0.0497,
+      "cogs_ratio": 0.7261,
+      "shipping_ratio": 0.0682,
+      "contribution_after_shipping": 12349279.6029,
+      "contribution_pct": 0.2057
+    },
+    {
+      "year_month": "2024-07",
+      "net_revenue": 52812312.0,
+      "margin": 15478706.4,
+      "margin_pct": 0.2931,
+      "discount_rate": 0.0525,
+      "refund_rate": 0.049,
+      "cogs_ratio": 0.7069,
+      "shipping_ratio": 0.067,
+      "contribution_after_shipping": 11939652.3974,
+      "contribution_pct": 0.2261
+    },
+    {
+      "year_month": "2024-08",
+      "net_revenue": 62365799.0,
+      "margin": 17113990.0,
+      "margin_pct": 0.2744,
+      "discount_rate": 0.0674,
+      "refund_rate": 0.0488,
+      "cogs_ratio": 0.7256,
+      "shipping_ratio": 0.069,
+      "contribution_after_shipping": 12811908.0,
+      "contribution_pct": 0.2054
+    },
+    {
+      "year_month": "2024-09",
+      "net_revenue": 63641274.0,
+      "margin": 17147424.2,
+      "margin_pct": 0.2694,
+      "discount_rate": 0.0732,
+      "refund_rate": 0.0524,
+      "cogs_ratio": 0.7306,
+      "shipping_ratio": 0.0694,
+      "contribution_after_shipping": 12730271.1954,
+      "contribution_pct": 0.2
+    },
+    {
+      "year_month": "2024-10",
+      "net_revenue": 61270052.0,
+      "margin": 16870949.6,
+      "margin_pct": 0.2754,
+      "discount_rate": 0.0638,
+      "refund_rate": 0.0486,
+      "cogs_ratio": 0.7246,
+      "shipping_ratio": 0.0689,
+      "contribution_after_shipping": 12646441.6031,
+      "contribution_pct": 0.2064
+    },
+    {
+      "year_month": "2024-11",
+      "net_revenue": 75239495.0,
+      "margin": 19806227.2,
+      "margin_pct": 0.2632,
+      "discount_rate": 0.0862,
+      "refund_rate": 0.0466,
+      "cogs_ratio": 0.7368,
+      "shipping_ratio": 0.0721,
+      "contribution_after_shipping": 14378272.2032,
+      "contribution_pct": 0.1911
+    },
+    {
+      "year_month": "2024-12",
+      "net_revenue": 68841720.0,
+      "margin": 17366083.8,
+      "margin_pct": 0.2523,
+      "discount_rate": 0.0993,
+      "refund_rate": 0.0458,
+      "cogs_ratio": 0.7477,
+      "shipping_ratio": 0.0739,
+      "contribution_after_shipping": 12276828.8037,
+      "contribution_pct": 0.1783
+    },
+    {
+      "year_month": "2025-01",
+      "net_revenue": 64417342.0,
+      "margin": 17790542.8,
+      "margin_pct": 0.2762,
+      "discount_rate": 0.0796,
+      "refund_rate": 0.0553,
+      "cogs_ratio": 0.7238,
+      "shipping_ratio": 0.0747,
+      "contribution_after_shipping": 12979852.7992,
+      "contribution_pct": 0.2015
+    },
+    {
+      "year_month": "2025-02",
+      "net_revenue": 62941006.0,
+      "margin": 16651490.0,
+      "margin_pct": 0.2646,
+      "discount_rate": 0.093,
+      "refund_rate": 0.0499,
+      "cogs_ratio": 0.7354,
+      "shipping_ratio": 0.0763,
+      "contribution_after_shipping": 11846927.999,
+      "contribution_pct": 0.1882
+    },
+    {
+      "year_month": "2025-03",
+      "net_revenue": 96093410.0,
+      "margin": 23604536.0,
+      "margin_pct": 0.2456,
+      "discount_rate": 0.1205,
+      "refund_rate": 0.0514,
+      "cogs_ratio": 0.7544,
+      "shipping_ratio": 0.0793,
+      "contribution_after_shipping": 15982220.0018,
+      "contribution_pct": 0.1663
+    },
+    {
+      "year_month": "2025-04",
+      "net_revenue": 65824325.0,
+      "margin": 17943051.6,
+      "margin_pct": 0.2726,
+      "discount_rate": 0.0958,
+      "refund_rate": 0.0499,
+      "cogs_ratio": 0.7274,
+      "shipping_ratio": 0.0783,
+      "contribution_after_shipping": 12789106.6006,
+      "contribution_pct": 0.1943
+    },
+    {
+      "year_month": "2025-05",
+      "net_revenue": 73643787.0,
+      "margin": 18897704.4,
+      "margin_pct": 0.2566,
+      "discount_rate": 0.1084,
+      "refund_rate": 0.0494,
+      "cogs_ratio": 0.7434,
+      "shipping_ratio": 0.0811,
+      "contribution_after_shipping": 12926301.398,
+      "contribution_pct": 0.1755
+    },
+    {
+      "year_month": "2025-06",
+      "net_revenue": 87031513.0,
+      "margin": 21337620.4,
+      "margin_pct": 0.2452,
+      "discount_rate": 0.1236,
+      "refund_rate": 0.0328,
+      "cogs_ratio": 0.7548,
+      "shipping_ratio": 0.081,
+      "contribution_after_shipping": 14292186.4014,
+      "contribution_pct": 0.1642
+    }
+  ],
+  "margin_bridge_h1_2024_to_h1_2025": {
+    "margin_pct_h1_2024": 0.28026358566050447,
+    "margin_pct_h1_2025": 0.25830556275898814,
+    "mix_effect_pp": 0.0013669407821034045,
+    "within_category_effect_pp": -0.023324963683619734
+  },
+  "category_mix_h1": [
+    {
+      "category": "Automotive",
+      "share_h1_24": 0.0136,
+      "share_h1_25": 0.0135,
+      "margin_pct_h1_24": 0.3074,
+      "margin_pct_h1_25": 0.2859,
+      "disc_rate_h1_24": 0.0476,
+      "disc_rate_h1_25": 0.0999
+    },
+    {
+      "category": "Beauty & Personal Care",
+      "share_h1_24": 0.036,
+      "share_h1_25": 0.0354,
+      "margin_pct_h1_24": 0.4777,
+      "margin_pct_h1_25": 0.4634,
+      "disc_rate_h1_24": 0.0465,
+      "disc_rate_h1_25": 0.1026
+    },
+    {
+      "category": "Books & Stationery",
+      "share_h1_24": 0.0063,
+      "share_h1_25": 0.007,
+      "margin_pct_h1_24": 0.2581,
+      "margin_pct_h1_25": 0.2307,
+      "disc_rate_h1_24": 0.0448,
+      "disc_rate_h1_25": 0.1023
+    },
+    {
+      "category": "Electronics",
+      "share_h1_24": 0.3648,
+      "share_h1_25": 0.3589,
+      "margin_pct_h1_24": 0.1056,
+      "margin_pct_h1_25": 0.0757,
+      "disc_rate_h1_24": 0.0467,
+      "disc_rate_h1_25": 0.1068
+    },
+    {
+      "category": "Fashion",
+      "share_h1_24": 0.1945,
+      "share_h1_25": 0.196,
+      "margin_pct_h1_24": 0.4312,
+      "margin_pct_h1_25": 0.4142,
+      "disc_rate_h1_24": 0.0463,
+      "disc_rate_h1_25": 0.1057
+    },
+    {
+      "category": "Footwear",
+      "share_h1_24": 0.0697,
+      "share_h1_25": 0.069,
+      "margin_pct_h1_24": 0.3839,
+      "margin_pct_h1_25": 0.3636,
+      "disc_rate_h1_24": 0.0471,
+      "disc_rate_h1_25": 0.1078
+    },
+    {
+      "category": "Grocery",
+      "share_h1_24": 0.022,
+      "share_h1_25": 0.0226,
+      "margin_pct_h1_24": 0.1052,
+      "margin_pct_h1_25": 0.0779,
+      "disc_rate_h1_24": 0.0475,
+      "disc_rate_h1_25": 0.1053
+    },
+    {
+      "category": "Health & Wellness",
+      "share_h1_24": 0.0181,
+      "share_h1_25": 0.0192,
+      "margin_pct_h1_24": 0.4261,
+      "margin_pct_h1_25": 0.406,
+      "disc_rate_h1_24": 0.0474,
+      "disc_rate_h1_25": 0.1075
+    },
+    {
+      "category": "Home & Kitchen",
+      "share_h1_24": 0.1312,
+      "share_h1_25": 0.1329,
+      "margin_pct_h1_24": 0.2993,
+      "margin_pct_h1_25": 0.2775,
+      "disc_rate_h1_24": 0.0464,
+      "disc_rate_h1_25": 0.1049
+    },
+    {
+      "category": "Mobile & Accessories",
+      "share_h1_24": 0.0912,
+      "share_h1_25": 0.0926,
+      "margin_pct_h1_24": 0.428,
+      "margin_pct_h1_25": 0.4086,
+      "disc_rate_h1_24": 0.0473,
+      "disc_rate_h1_25": 0.1059
+    },
+    {
+      "category": "Sports & Outdoors",
+      "share_h1_24": 0.0322,
+      "share_h1_25": 0.0321,
+      "margin_pct_h1_24": 0.3654,
+      "margin_pct_h1_25": 0.3423,
+      "disc_rate_h1_24": 0.0479,
+      "disc_rate_h1_25": 0.1079
+    },
+    {
+      "category": "Toys & Games",
+      "share_h1_24": 0.017,
+      "share_h1_25": 0.0173,
+      "margin_pct_h1_24": 0.3968,
+      "margin_pct_h1_25": 0.3792,
+      "disc_rate_h1_24": 0.049,
+      "disc_rate_h1_25": 0.1042
+    },
+    {
+      "category": "Unknown",
+      "share_h1_24": 0.0036,
+      "share_h1_25": 0.0034,
+      "margin_pct_h1_24": 0.3784,
+      "margin_pct_h1_25": 0.3365,
+      "disc_rate_h1_24": 0.0374,
+      "disc_rate_h1_25": 0.1072
+    }
+  ]
+}

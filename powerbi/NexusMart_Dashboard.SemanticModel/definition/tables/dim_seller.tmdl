@@ -1,0 +1,126 @@
+table dim_seller
+	lineageTag: b9e3f062-92cc-4fb8-b425-5dfa8c76e296
+
+	column seller_key
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: cb687539-ef0e-4ac2-95be-b6798ff31d5c
+		summarizeBy: none
+		sourceColumn: seller_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column seller_id
+		dataType: string
+		lineageTag: a56758bb-f982-42d3-aad8-77a52b2e3690
+		summarizeBy: none
+		sourceColumn: seller_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column seller_name
+		dataType: string
+		lineageTag: f85c994e-0130-4897-9349-d481e4839a5d
+		summarizeBy: none
+		sourceColumn: seller_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column join_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 22524b45-3b81-4b23-8c35-c5aff1e56f53
+		summarizeBy: none
+		sourceColumn: join_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column seller_tier
+		dataType: string
+		lineageTag: b6732b63-5089-4d9e-97a1-9b900e434c89
+		summarizeBy: none
+		sourceColumn: seller_tier
+
+		annotation SummarizationSetBy = Automatic
+
+	column rating
+		dataType: double
+		formatString: "#,0.00"
+		lineageTag: 6ad2cc13-0f31-465e-a664-3007112e2ba2
+		summarizeBy: none
+		sourceColumn: rating
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: e4e3ef18-8664-4cf3-8998-d97e635465dd
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column province
+		dataType: string
+		lineageTag: cb5d18cf-0eec-4524-b5bf-ae8aed7990de
+		summarizeBy: none
+		sourceColumn: province
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 54710a3a-61b5-4934-8c91-075551ba86ec
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_at
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: d927c961-3854-44dd-bde5-34150b7c7f3c
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		annotation SummarizationSetBy = Automatic
+
+	column quality_score
+		dataType: double
+		formatString: "#,0.00"
+		lineageTag: 0e25f98b-321f-4705-bb15-ae5a056c7df6
+		summarizeBy: none
+		sourceColumn: quality_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column quality_rank
+		dataType: int64
+		formatString: 0
+		lineageTag: 39f17da3-1a4c-484e-b8e4-6bd106684b12
+		summarizeBy: none
+		sourceColumn: quality_rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column delivered_lines
+		dataType: int64
+		formatString: 0
+		lineageTag: caab31a2-a758-424f-b9e4-f8e4bdc9ae8f
+		summarizeBy: none
+		sourceColumn: delivered_lines
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_seller = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(Server, Database),
+				    tbl = Source{[Schema="dw",Item="dim_seller"]}[Data]
+				in
+				    tbl
+
+	annotation PBI_ResultType = Table

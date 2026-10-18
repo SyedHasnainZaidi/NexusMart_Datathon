@@ -1,0 +1,42 @@
+graph star {
+  graph [layout=neato, overlap=false, splines=true, bgcolor="white", pad=0.3, fontname="Helvetica", label="NexusMart warehouse - star schema (schema dw)\nGrain of FactSales: one row per order line item. Dimensions are not linked to each other. Key -1 = Unknown member in every dimension.", labelloc=b, fontsize=11, fontcolor="#52514e"];
+  node [shape=plaintext, fontname="Helvetica", fontsize=10];
+  edge [color="#86b6ef", penwidth=2, fontname="Helvetica"];
+
+  fact [pos="0,0!", label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3" COLOR="#2a78d6">
+<TR><TD BGCOLOR="#2a78d6"><FONT COLOR="white"><B>fact_sales</B>  (315,143 rows)</FONT></TD></TR>
+<TR><TD ALIGN="LEFT" BALIGN="LEFT">PK sales_key<BR/>FK date_key  (order date)<BR/>FK customer_key<BR/>FK product_key<BR/>FK seller_key<BR/>FK location_key  (ship-to city)<BR/>FK return_date_key  (role-playing DimDate)</TD></TR>
+<TR><TD ALIGN="LEFT" BALIGN="LEFT">order_id, order_item_id (unique)</TD></TR>
+<TR><TD ALIGN="LEFT" BALIGN="LEFT">quantity, unit_price<BR/>gross_amount, discount_amount, net_amount<BR/>cost_amount, shipping_fee (allocated)<BR/>shipping_days, order_to_delivery_days, is_on_time<BR/>is_cancelled, is_in_transit, is_delivered_line<BR/>is_returned, is_kept_line, returned_amount</TD></TR>
+<TR><TD ALIGN="LEFT" BALIGN="LEFT">return_reason, return_status<BR/>order_status, payment_method, channel<BR/>discount_code, discount_pct, courier, delivery_status<BR/>is_new_customer_order, dq_flags</TD></TR>
+</TABLE>>];
+
+  ddate [pos="-5.2,2.6!", label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3" COLOR="#eb6834">
+<TR><TD BGCOLOR="#eb6834"><FONT COLOR="white"><B>dim_date</B></FONT></TD></TR>
+<TR><TD ALIGN="LEFT" BALIGN="LEFT">PK date_key (yyyymmdd)<BR/>full_date, day_name, week, month, quarter, year<BR/>is_weekend, is_public_holiday, holiday_name<BR/>is_ramadan, is_eid_ul_fitr, is_eid_ul_adha<BR/>is_independence_day, is_singles_day_1111<BR/>is_black_friday, event_name</TD></TR></TABLE>>];
+
+  dcust [pos="5.2,2.6!", label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3" COLOR="#eb6834">
+<TR><TD BGCOLOR="#eb6834"><FONT COLOR="white"><B>dim_customer</B>  (SCD Type 1)</FONT></TD></TR>
+<TR><TD ALIGN="LEFT" BALIGN="LEFT">PK customer_key<BR/>customer_id (master, de-duplicated)<BR/>full_name, email, phone, gender, age_band<BR/>registration_date, city, province, region<BR/>first/last order, cohort_month, order_count<BR/>rfm scores, customer_segment, is_repeat_customer</TD></TR></TABLE>>];
+
+  dprod [pos="-5.2,-2.6!", label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3" COLOR="#eb6834">
+<TR><TD BGCOLOR="#eb6834"><FONT COLOR="white"><B>dim_product</B></FONT></TD></TR>
+<TR><TD ALIGN="LEFT" BALIGN="LEFT">PK product_key<BR/>product_id (master)<BR/>product_name, category (12 standard)<BR/>sub_category, brand, list_price<BR/>cost_price, weight_kg, price_band</TD></TR></TABLE>>];
+
+  dsell [pos="5.2,-2.6!", label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3" COLOR="#eb6834">
+<TR><TD BGCOLOR="#eb6834"><FONT COLOR="white"><B>dim_seller</B></FONT></TD></TR>
+<TR><TD ALIGN="LEFT" BALIGN="LEFT">PK seller_key<BR/>seller_id, seller_name, join_date<BR/>seller_tier, rating<BR/>city, province, region</TD></TR></TABLE>>];
+
+  dloc [pos="0,-4.1!", label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3" COLOR="#eb6834">
+<TR><TD BGCOLOR="#eb6834"><FONT COLOR="white"><B>dim_location</B></FONT></TD></TR>
+<TR><TD ALIGN="LEFT" BALIGN="LEFT">PK location_key<BR/>city_id, city, province, region<BR/>population_tier, latitude, longitude</TD></TR></TABLE>>];
+
+  fact -- ddate [label="date_key / return_date_key", fontsize=8, fontcolor="#52514e"];
+  fact -- dcust; fact -- dprod; fact -- dsell; fact -- dloc;
+}

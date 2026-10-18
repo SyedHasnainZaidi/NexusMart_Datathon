@@ -1,0 +1,126 @@
+table dim_product
+	lineageTag: 9254dc4f-4d25-4028-a1f6-8dcc26d36038
+
+	column product_key
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e55dd917-fc89-403a-99c4-019053c898de
+		summarizeBy: none
+		sourceColumn: product_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_id
+		dataType: string
+		lineageTag: f62a271e-4059-43fa-b963-18eba246bdfc
+		summarizeBy: none
+		sourceColumn: product_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_name
+		dataType: string
+		lineageTag: 057b2da6-4843-4635-82bb-4aa660e6360f
+		summarizeBy: none
+		sourceColumn: product_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: 43037f3b-b2ac-4456-b382-683125ab3a74
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column sub_category
+		dataType: string
+		lineageTag: ba514933-8982-43ba-8dd2-7e336195db6b
+		summarizeBy: none
+		sourceColumn: sub_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column brand
+		dataType: string
+		lineageTag: 53f06d3f-0f98-450e-9443-3fe6c5b2440c
+		summarizeBy: none
+		sourceColumn: brand
+
+		annotation SummarizationSetBy = Automatic
+
+	column list_price
+		dataType: double
+		formatString: "#,0.00"
+		lineageTag: c4c6e316-7578-4b4e-aa00-328dea2ee9f3
+		summarizeBy: none
+		sourceColumn: list_price
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_price
+		dataType: double
+		formatString: "#,0.00"
+		lineageTag: 291a4b5b-7363-48ce-85dd-911bd96a6bfe
+		summarizeBy: none
+		sourceColumn: cost_price
+
+		annotation SummarizationSetBy = Automatic
+
+	column weight_kg
+		dataType: double
+		formatString: "#,0.00"
+		lineageTag: 187d2fc2-8f1e-41be-82b7-c05170717f2f
+		summarizeBy: none
+		sourceColumn: weight_kg
+
+		annotation SummarizationSetBy = Automatic
+
+	column price_band
+		dataType: string
+		lineageTag: 0de58f0b-91b7-4e89-ad3a-23ca7b60c41e
+		summarizeBy: none
+		sourceColumn: price_band
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_imputed
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d2537f4b-cd25-4bf5-b2cb-a3425805bf9a
+		summarizeBy: none
+		sourceColumn: cost_imputed
+
+		annotation SummarizationSetBy = Automatic
+
+	column duplicate_ids_merged
+		dataType: int64
+		formatString: 0
+		lineageTag: 96ff0872-246b-4483-ad34-fa39bc10ea8b
+		summarizeBy: none
+		sourceColumn: duplicate_ids_merged
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_at
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: ce5c8d8c-68db-4fa1-8160-fbf8252649fb
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_product = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(Server, Database),
+				    tbl = Source{[Schema="dw",Item="dim_product"]}[Data]
+				in
+				    tbl
+
+	annotation PBI_ResultType = Table

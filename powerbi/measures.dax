@@ -1,0 +1,61 @@
+// NexusMart - DAX measures used in the dashboard (table _Measures).
+// Generated from scripts/build_pbip.py - definitions follow section 9 of the brief.
+
+// ---------- 0 MoM ----------
+Net Revenue MoM = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Net Revenue], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Net Revenue], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN DIVIDE(c - p, p)    // format: +0.0%;-0.0%;0.0%
+Orders MoM = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Orders], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Orders], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN DIVIDE(c - p, p)    // format: +0.0%;-0.0%;0.0%
+AOV MoM = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([AOV], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([AOV], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN DIVIDE(c - p, p)    // format: +0.0%;-0.0%;0.0%
+Units MoM = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Units], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Units], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN DIVIDE(c - p, p)    // format: +0.0%;-0.0%;0.0%
+Active Customers MoM = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Active Customers], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Active Customers], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN DIVIDE(c - p, p)    // format: +0.0%;-0.0%;0.0%
+Return Rate MoM = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Return Rate], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Return Rate], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN c - p    // format: +0.00%;-0.00%;0.00%
+Cancellation Rate MoM = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Cancellation Rate], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Cancellation Rate], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN c - p    // format: +0.00%;-0.00%;0.00%
+Margin % MoM = VAR d = CALCULATE(MAX(dim_date[full_date]), fact_sales) VAR s = DATE(YEAR(d), MONTH(d), 1) VAR c = CALCULATE([Margin %], DATESBETWEEN(dim_date[full_date], s, EOMONTH(d, 0))) VAR p = CALCULATE([Margin %], DATESBETWEEN(dim_date[full_date], EDATE(s, -1), s - 1)) RETURN c - p    // format: +0.00%;-0.00%;0.00%
+// ---------- 1 Sales ----------
+Gross Sales = SUM(fact_sales[gross_amount])    // format: #,0
+Discounts = SUM(fact_sales[discount_amount])    // format: #,0
+Cancelled Sales = CALCULATE(SUM(fact_sales[net_amount]), fact_sales[is_cancelled] = TRUE())    // format: #,0
+NMV = CALCULATE(SUM(fact_sales[net_amount]), fact_sales[is_cancelled] = FALSE())    // format: #,0
+Refunds = SUM(fact_sales[returned_amount])    // format: #,0
+Net Revenue = [NMV] - [Refunds]    // format: #,0
+// ---------- 2 Profit ----------
+Cost of Goods = CALCULATE(SUM(fact_sales[cost_amount]), fact_sales[is_kept_line] = TRUE())    // format: #,0
+Margin = [Net Revenue] - [Cost of Goods]    // format: #,0
+Margin % = DIVIDE([Margin], [Net Revenue])    // format: 0.0%
+Shipping Cost = SUM(fact_sales[shipping_fee])    // format: #,0
+Margin After Shipping = [Margin] - [Shipping Cost]    // format: #,0
+Margin After Shipping % = DIVIDE([Margin After Shipping], [Net Revenue])    // format: 0.0%
+Discount Rate = DIVIDE([Discounts], [Gross Sales])    // format: 0.0%
+Leakage % = 1 - DIVIDE([Net Revenue], [Gross Sales])    // format: 0.0%
+// ---------- 3 Orders ----------
+Orders = DISTINCTCOUNT(fact_sales[order_id])    // format: #,0
+Non-Cancelled Orders = CALCULATE(DISTINCTCOUNT(fact_sales[order_id]), fact_sales[is_cancelled] = FALSE())    // format: #,0
+Cancelled Orders = CALCULATE(DISTINCTCOUNT(fact_sales[order_id]), fact_sales[is_cancelled] = TRUE())    // format: #,0
+Cancellation Rate = DIVIDE([Cancelled Orders], [Orders])    // format: 0.00%
+AOV = DIVIDE([NMV], [Non-Cancelled Orders])    // format: #,0
+Units = CALCULATE(SUM(fact_sales[quantity]), fact_sales[is_cancelled] = FALSE())    // format: #,0
+// ---------- 4 Returns ----------
+Delivered Lines = CALCULATE(COUNTROWS(fact_sales), fact_sales[is_delivered_line] = TRUE())    // format: #,0
+Returned Lines = CALCULATE(COUNTROWS(fact_sales), fact_sales[is_returned] = TRUE())    // format: #,0
+Return Rate = DIVIDE([Returned Lines], [Delivered Lines])    // format: 0.00%
+Refunds by Return Date = CALCULATE([Refunds], USERELATIONSHIP(fact_sales[return_date_key], dim_date[date_key]))    // format: #,0
+// ---------- 5 Customers ----------
+Active Customers = CALCULATE(DISTINCTCOUNT(fact_sales[customer_key]), fact_sales[is_cancelled] = FALSE(), fact_sales[customer_key] <> -1)    // format: #,0
+New Customer Revenue = CALCULATE([Net Revenue], fact_sales[is_new_customer_order] = TRUE())    // format: #,0
+Returning Customer Revenue = [Net Revenue] - [New Customer Revenue]    // format: #,0
+Observed CLV = DIVIDE(CALCULATE([Net Revenue], fact_sales[customer_key] <> -1), [Active Customers])    // format: #,0
+Repeat Purchase Rate = VAR c = ADDCOLUMNS(FILTER(VALUES(fact_sales[customer_key]), fact_sales[customer_key] <> -1), "@o", [Non-Cancelled Orders]) RETURN DIVIDE(COUNTROWS(FILTER(c, [@o] >= 2)), COUNTROWS(FILTER(c, [@o] >= 1)))    // format: 0.0%
+// ---------- 6 Delivery ----------
+On-Time Rate = DIVIDE(CALCULATE(COUNTROWS(fact_sales), fact_sales[is_on_time] = TRUE(), fact_sales[is_delivered_line] = TRUE()), CALCULATE(COUNTROWS(fact_sales), NOT ISBLANK(fact_sales[is_on_time]), fact_sales[is_delivered_line] = TRUE()))    // format: 0.0%
+Avg Delivery Days = AVERAGE(fact_sales[order_to_delivery_days])    // format: 0.0
+Seller Quality Score = AVERAGE(dim_seller[quality_score])    // format: 0.0
+// ---------- 7 Time ----------
+Net Revenue per Day = DIVIDE([Net Revenue], CALCULATE(DISTINCTCOUNT(dim_date[full_date]), fact_sales))    // format: #,0
+Net Revenue 3M Avg = IF(ISBLANK([Net Revenue]), BLANK(), AVERAGEX(CALCULATETABLE(VALUES(dim_date[year_month]), DATESINPERIOD(dim_date[full_date], MAX(dim_date[full_date]), -3, MONTH)), [Net Revenue]))    // format: #,0
+Net Revenue 7D Avg = IF(ISBLANK([Net Revenue]), BLANK(), AVERAGEX(DATESINPERIOD(dim_date[full_date], MAX(dim_date[full_date]), -7, DAY), [Net Revenue]))    // format: #,0
+Festival Uplift vs Normal % = VAR n = CALCULATE([Net Revenue per Day], dim_date[event_name] = "Normal day") RETURN DIVIDE([Net Revenue per Day] - n, n)    // format: 0.0%
+Latest Month = FORMAT(CALCULATE(MAX(dim_date[full_date]), fact_sales), "mmm yyyy")
+// ---------- 8 Geography ----------
+Net Revenue Share % = DIVIDE([Net Revenue], CALCULATE([Net Revenue], ALLSELECTED(dim_location)))    // format: 0.0%
+Top 5 City Share % = VAR t = TOPN(5, FILTER(ALLSELECTED(dim_location[city]), dim_location[city] <> "Unknown"), [Net Revenue]) RETURN DIVIDE(CALCULATE([Net Revenue], t), CALCULATE([Net Revenue], ALLSELECTED(dim_location)))    // format: 0.0%
+// ---------- 9 Data quality ----------
+Flagged Line % = DIVIDE(CALCULATE(COUNTROWS(fact_sales), NOT ISBLANK(fact_sales[dq_flags])), COUNTROWS(fact_sales))    // format: 0.0%

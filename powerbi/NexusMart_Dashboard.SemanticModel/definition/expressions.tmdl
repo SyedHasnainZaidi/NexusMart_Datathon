@@ -1,0 +1,10 @@
+expression Server = "localhost" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 2507e53e-f776-45f4-9d39-489eefc1f2c2
+
+	annotation PBI_ResultType = Text
+
+expression Database = "nexusmart" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 7e4d40be-af2c-4ec8-a6fe-792fc61c36fb
+
+	annotation PBI_ResultType = Text
+

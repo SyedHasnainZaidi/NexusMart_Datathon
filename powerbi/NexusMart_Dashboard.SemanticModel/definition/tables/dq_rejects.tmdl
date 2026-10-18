@@ -1,0 +1,38 @@
+table dq_rejects
+	lineageTag: 28e59364-f41e-469d-9de4-06b767a96015
+
+	column source_table
+		dataType: string
+		lineageTag: f22001f8-38d6-4ffe-bce3-86d72f766067
+		summarizeBy: none
+		sourceColumn: source_table
+
+		annotation SummarizationSetBy = Automatic
+
+	column reason_code
+		dataType: string
+		lineageTag: 66839689-f793-4b2b-9f85-2de5dd300105
+		summarizeBy: none
+		sourceColumn: reason_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column records
+		dataType: int64
+		formatString: 0
+		lineageTag: acb267bc-abba-4a00-a546-60b70b62dd89
+		summarizeBy: sum
+		sourceColumn: records
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dq_rejects = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(Server, Database),
+				    tbl = Source{[Schema="dq",Item="vw_latest_rejects"]}[Data]
+				in
+				    tbl
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,311 @@
+{
+  "customers": {
+    "rows": 45000,
+    "columns": [
+      "customer_id",
+      "full_name",
+      "email",
+      "phone",
+      "gender",
+      "registration_date",
+      "city_id",
+      "birth_year"
+    ],
+    "missing_optional_columns_filled": [],
+    "extra_columns_ignored": [],
+    "exact_duplicate_rows": 0,
+    "duplicate_primary_keys": 0,
+    "blank_values": {
+      "customer_id": 0,
+      "full_name": 0,
+      "email": 1698,
+      "phone": 3599,
+      "gender": 2199,
+      "registration_date": 0,
+      "city_id": 2233,
+      "birth_year": 4600
+    },
+    "distinct_values": {
+      "customer_id": 45000,
+      "full_name": 3463,
+      "email": 42752,
+      "phone": 40860,
+      "gender": 9,
+      "registration_date": 2501,
+      "city_id": 651,
+      "birth_year": 51
+    }
+  },
+  "products": {
+    "rows": 3200,
+    "columns": [
+      "product_id",
+      "product_name",
+      "category",
+      "sub_category",
+      "brand",
+      "list_price",
+      "cost_price",
+      "weight_kg",
+      "seller_id"
+    ],
+    "missing_optional_columns_filled": [],
+    "extra_columns_ignored": [],
+    "exact_duplicate_rows": 0,
+    "duplicate_primary_keys": 0,
+    "blank_values": {
+      "product_id": 0,
+      "product_name": 0,
+      "category": 0,
+      "sub_category": 485,
+      "brand": 392,
+      "list_price": 0,
+      "cost_price": 170,
+      "weight_kg": 296,
+      "seller_id": 0
+    },
+    "distinct_values": {
+      "product_id": 3200,
+      "product_name": 3176,
+      "category": 74,
+      "sub_category": 37,
+      "brand": 17,
+      "list_price": 970,
+      "cost_price": 1878,
+      "weight_kg": 473,
+      "seller_id": 407
+    }
+  },
+  "sellers": {
+    "rows": 420,
+    "columns": [
+      "seller_id",
+      "seller_name",
+      "join_date",
+      "seller_tier",
+      "city_id",
+      "rating"
+    ],
+    "missing_optional_columns_filled": [],
+    "extra_columns_ignored": [],
+    "exact_duplicate_rows": 0,
+    "duplicate_primary_keys": 0,
+    "blank_values": {
+      "seller_id": 0,
+      "seller_name": 0,
+      "join_date": 34,
+      "seller_tier": 22,
+      "city_id": 0,
+      "rating": 33
+    },
+    "distinct_values": {
+      "seller_id": 420,
+      "seller_name": 415,
+      "join_date": 358,
+      "seller_tier": 11,
+      "city_id": 106,
+      "rating": 26
+    }
+  },
+  "locations": {
+    "rows": 650,
+    "columns": [
+      "city_id",
+      "city",
+      "province",
+      "region",
+      "latitude",
+      "longitude",
+      "population_tier"
+    ],
+    "missing_optional_columns_filled": [],
+    "extra_columns_ignored": [],
+    "exact_duplicate_rows": 0,
+    "duplicate_primary_keys": 0,
+    "blank_values": {
+      "city_id": 0,
+      "city": 0,
+      "province": 25,
+      "region": 0,
+      "latitude": 33,
+      "longitude": 31,
+      "population_tier": 0
+    },
+    "distinct_values": {
+      "city_id": 650,
+      "city": 650,
+      "province": 22,
+      "region": 3,
+      "latitude": 616,
+      "longitude": 616,
+      "population_tier": 3
+    }
+  },
+  "orders": {
+    "rows": 163200,
+    "columns": [
+      "order_id",
+      "customer_id",
+      "order_date",
+      "order_status",
+      "ship_city_id",
+      "order_total",
+      "discount_code",
+      "channel"
+    ],
+    "missing_optional_columns_filled": [],
+    "extra_columns_ignored": [],
+    "exact_duplicate_rows": 3200,
+    "duplicate_primary_keys": 3200,
+    "blank_values": {
+      "order_id": 0,
+      "customer_id": 0,
+      "order_date": 0,
+      "order_status": 0,
+      "ship_city_id": 6516,
+      "order_total": 0,
+      "discount_code": 112059,
+      "channel": 0
+    },
+    "distinct_values": {
+      "order_id": 160000,
+      "customer_id": 33756,
+      "order_date": 2008,
+      "order_status": 20,
+      "ship_city_id": 651,
+      "order_total": 32728,
+      "discount_code": 33,
+      "channel": 12
+    }
+  },
+  "order_items": {
+    "rows": 315143,
+    "columns": [
+      "order_item_id",
+      "order_id",
+      "product_id",
+      "seller_id",
+      "quantity",
+      "unit_price",
+      "discount_amount"
+    ],
+    "missing_optional_columns_filled": [],
+    "extra_columns_ignored": [],
+    "exact_duplicate_rows": 0,
+    "duplicate_primary_keys": 0,
+    "blank_values": {
+      "order_item_id": 0,
+      "order_id": 0,
+      "product_id": 0,
+      "seller_id": 0,
+      "quantity": 0,
+      "unit_price": 0,
+      "discount_amount": 31567
+    },
+    "distinct_values": {
+      "order_item_id": 315143,
+      "order_id": 160000,
+      "product_id": 4086,
+      "seller_id": 407,
+      "quantity": 24,
+      "unit_price": 21868,
+      "discount_amount": 7557
+    }
+  },
+  "payments": {
+    "rows": 168111,
+    "columns": [
+      "payment_id",
+      "order_id",
+      "payment_method",
+      "payment_status",
+      "amount",
+      "payment_date"
+    ],
+    "missing_optional_columns_filled": [],
+    "extra_columns_ignored": [],
+    "exact_duplicate_rows": 3296,
+    "duplicate_primary_keys": 3296,
+    "blank_values": {
+      "payment_id": 0,
+      "order_id": 0,
+      "payment_method": 0,
+      "payment_status": 0,
+      "amount": 0,
+      "payment_date": 5017
+    },
+    "distinct_values": {
+      "payment_id": 164815,
+      "order_id": 160000,
+      "payment_method": 22,
+      "payment_status": 17,
+      "amount": 33179,
+      "payment_date": 1687
+    }
+  },
+  "shipping": {
+    "rows": 151228,
+    "columns": [
+      "shipment_id",
+      "order_id",
+      "courier",
+      "shipped_date",
+      "delivered_date",
+      "shipping_fee",
+      "delivery_status"
+    ],
+    "missing_optional_columns_filled": [],
+    "extra_columns_ignored": [],
+    "exact_duplicate_rows": 0,
+    "duplicate_primary_keys": 0,
+    "blank_values": {
+      "shipment_id": 0,
+      "order_id": 0,
+      "courier": 0,
+      "shipped_date": 5943,
+      "delivered_date": 18841,
+      "shipping_fee": 9145,
+      "delivery_status": 0
+    },
+    "distinct_values": {
+      "shipment_id": 151228,
+      "order_id": 151228,
+      "courier": 22,
+      "shipped_date": 1658,
+      "delivered_date": 1689,
+      "shipping_fee": 2964,
+      "delivery_status": 15
+    }
+  },
+  "returns": {
+    "rows": 16048,
+    "columns": [
+      "return_id",
+      "order_item_id",
+      "return_date",
+      "return_reason",
+      "return_status",
+      "refund_amount"
+    ],
+    "missing_optional_columns_filled": [],
+    "extra_columns_ignored": [],
+    "exact_duplicate_rows": 0,
+    "duplicate_primary_keys": 0,
+    "blank_values": {
+      "return_id": 0,
+      "order_item_id": 0,
+      "return_date": 0,
+      "return_reason": 2390,
+      "return_status": 0,
+      "refund_amount": 0
+    },
+    "distinct_values": {
+      "return_id": 16048,
+      "order_item_id": 16048,
+      "return_date": 1510,
+      "return_reason": 38,
+      "return_status": 10,
+      "refund_amount": 6958
+    }
+  }
+}

@@ -1,0 +1,101 @@
+table dim_location
+	lineageTag: 760d4955-c982-4415-80b8-9c79a96d7273
+
+	column location_key
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 9afa83a5-b1d0-457a-a593-e377acbb15e9
+		summarizeBy: none
+		sourceColumn: location_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column city_id
+		dataType: int64
+		formatString: 0
+		lineageTag: f9a417ba-4051-4031-8622-6c52bababb81
+		summarizeBy: none
+		sourceColumn: city_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: 2bd848aa-7499-40fa-b641-838a53416b45
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column province
+		dataType: string
+		lineageTag: 4fd87fde-22c9-4b91-8993-bb35e97c7fad
+		summarizeBy: none
+		sourceColumn: province
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 81c309c5-20eb-4188-b781-68ff9eecf487
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column population_tier
+		dataType: string
+		lineageTag: b784fc80-24b9-43b6-9118-0e67ac6ecc43
+		summarizeBy: none
+		sourceColumn: population_tier
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: double
+		formatString: "#,0.00"
+		lineageTag: fdc09612-9392-4e83-8b15-f7ba7eb9d719
+		summarizeBy: none
+		sourceColumn: latitude
+
+		annotation SummarizationSetBy = Automatic
+
+	column longitude
+		dataType: double
+		formatString: "#,0.00"
+		lineageTag: 9474419d-55c7-4520-896a-835d6795168a
+		summarizeBy: none
+		sourceColumn: longitude
+
+		annotation SummarizationSetBy = Automatic
+
+	column province_imputed
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ad705126-ed63-4f76-9c94-2a8625bef407
+		summarizeBy: none
+		sourceColumn: province_imputed
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_at
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: dced549f-5c5c-4635-9220-46f6f5438fbb
+		summarizeBy: none
+		sourceColumn: updated_at
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_location = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(Server, Database),
+				    tbl = Source{[Schema="dw",Item="dim_location"]}[Data]
+				in
+				    tbl
+
+	annotation PBI_ResultType = Table

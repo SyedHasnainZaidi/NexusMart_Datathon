@@ -1,0 +1,1 @@
+Put the 9 competition CSV files here (customers.csv, products.csv, sellers.csv, locations.csv, orders.csv, order_items.csv, payments.csv, shipping.csv, returns.csv).

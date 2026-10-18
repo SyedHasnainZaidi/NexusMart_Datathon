@@ -1,0 +1,10 @@
+table,raw,clean
+locations,650,650
+sellers,420,420
+products,3200,3175
+customers,45000,42500
+orders,163200,160000
+order_items,315143,315143
+payments,168111,164815
+shipping,151228,151228
+returns,16048,16033

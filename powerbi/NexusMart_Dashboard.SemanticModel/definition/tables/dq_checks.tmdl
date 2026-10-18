@@ -1,0 +1,64 @@
+table dq_checks
+	lineageTag: 36b3ae8e-05fc-4251-b2ed-f32dd2775282
+
+	column check_name
+		dataType: string
+		lineageTag: 8581ae18-3635-449a-bfaf-3fda9bd6f4e3
+		summarizeBy: none
+		sourceColumn: check_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column severity
+		dataType: string
+		lineageTag: 8a310eae-d5cc-42c1-b3db-1414d40233b0
+		summarizeBy: none
+		sourceColumn: severity
+
+		annotation SummarizationSetBy = Automatic
+
+	column observed
+		dataType: double
+		formatString: "#,0.00"
+		lineageTag: 52eb66f1-9e7f-4e1d-bbee-91a09d61e2ca
+		summarizeBy: none
+		sourceColumn: observed
+
+		annotation SummarizationSetBy = Automatic
+
+	column threshold
+		dataType: double
+		formatString: "#,0.00"
+		lineageTag: bf64bfa1-85ad-48ca-840f-820ba6c53d6d
+		summarizeBy: none
+		sourceColumn: threshold
+
+		annotation SummarizationSetBy = Automatic
+
+	column passed
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c91d4a4f-500f-44e3-bead-d4fdaed9df2a
+		summarizeBy: none
+		sourceColumn: passed
+
+		annotation SummarizationSetBy = Automatic
+
+	column detail
+		dataType: string
+		lineageTag: 812d51d7-3b36-4713-a910-1356583caee0
+		summarizeBy: none
+		sourceColumn: detail
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dq_checks = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database(Server, Database),
+				    tbl = Source{[Schema="dq",Item="vw_latest_checks"]}[Data]
+				in
+				    tbl
+
+	annotation PBI_ResultType = Table
